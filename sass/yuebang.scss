@@ -1,0 +1,14 @@
+/**
+ * 基础样式
+ */
+@import 'base/normalize';
+@import 'helpers/variable';
+@import 'helpers/functions';
+@import 'helpers/minixs';
+
+@import 'base/base';
+@import 'components/btn';
+@import 'components/radio';
+@import 'components/checkbox';
+
+@import 'pages/yb_index';

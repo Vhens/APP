@@ -1,0 +1,54 @@
+/**
+ * 按钮样式
+ */
+.btn {
+    font-weight: bold;
+    line-height: 1;
+
+    display: inline-block;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #fff;
+
+    @include box-shadow(0 1px 3px rgba(0,0,0,.25));
+}
+.btn-1 {
+    font-size: 14px;
+
+    padding: 5px 10px;
+
+    @include border-radius(6px);
+}
+.btn:active {
+    @include transform(translateY(1px));
+}
+// 颜色
+.btn-red {
+    background-color: nth($color,1);
+}
+.btn-red:hover {
+    background-color: nth($color,2);
+}
+//发光
+.btn-shine {
+    @include animation(btn 3s infinite);
+}
+@-webkit-keyframes btn {
+    from {
+        background-color: #749a02;
+
+        @include box-shadow(0 0 9px #333);
+    }
+    50% {
+        background-color: #91bd09;
+
+        @include box-shadow(0 0 18px #91bd09);
+    }
+    to {
+        background-color: #749a02;
+
+        @include box-shadow(0 0 9px #333);
+    }
+}
