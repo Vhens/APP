@@ -1,0 +1,31 @@
+.header{
+    width:100%;
+    background-color:nth($color,1);
+    ul{
+          display:-webkit-flex;
+          -webkit-flex-direction:row;
+          align-items:center;
+            height:px2rem(72);
+        line-height:px2rem(72);
+    }
+    .top-item{
+        // display:inline-block;
+        img{
+                margin-top: 13px;
+        }
+    }
+    .top-item:nth-child(1) img{
+        width:px2rem(54);
+    }
+    .top-item:nth-child(2) img{
+        width:px2rem(111);
+    }
+    .top-item:nth-child(3) input{
+        width:100%;
+        height:px2rem(50);
+        @include border-radius(4px);
+    }
+    .top-item:nth-child(4) img{
+        width:px2rem(51);
+    }
+}
