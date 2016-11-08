@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+}
+//排名头部消息
+.rank_info{
+    position:relative;
+    width:100%;
+    height:90px;
+    // border:1px solid black;
+    font-size:px2rem(30);
+    .info{
+        font-family:"微软雅黑";
+        width:80%;
+        margin-left:20px;
+        line-height:45px;
+        span{
+            color:rgb(245, 164, 24);
+        }
+
+    }
+    .ahead{
+        position:absolute;
+        top:27px;
+        right:20px;
+        height:36px;
+        span{
+            color:rgb(210, 212, 218);
+            font-size:px2rem(65);
+            line-height:36px;
+        }
+    }
+
+}
+.line{
+    width:100%;
+    height:4px;
+    background:rgb(218, 218, 218);
+}
+//排名列表
+.rank_list{
+    width:100%;
+    font-family:"微软雅黑";
+    ul{
+        display: -webkit-box;
+        list-style: none;
+        li{
+            display: -webkit-box;
+            -webkit-box-flex: 1;
+            width:100%;
+            height:100px;
+            padding-left:20px;
+            padding-right:20px;
+            line-height:100px;
+            font-size:px2rem(30);
+            border-bottom:1px solid rgb(210, 212, 218);
+            //排名
+            .num{
+                font-size:px2rem(30);
+                color:rgb(231, 30, 43);
+                margin-right:20px;
+            }
+            //头像
+            .headImg{
+                width:70px;
+                height:70px;
+                border-radius:45px;
+                margin-top:15px;
+                margin-right:3%;
+                img{
+                    border-radius:45px;
+                    width:100%;
+                    height:100%;
+                }
+            }
+            //名字
+            .name{
+                -webkit-box-flex: 2;
+            }
+            //加我按钮
+            input{
+                font-family:"微软雅黑";
+                margin-right:3%;
+                border:0;
+                border-radius:5px;
+                width:93.5px;
+                height:50px;
+                background:nth($color,1);
+                color:white;
+            }
+            //加活跃度
+            .addnum{
+                color:rgb(245, 164, 24);
+            }
+        }
+    }
+
+}
