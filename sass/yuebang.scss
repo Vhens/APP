@@ -5,10 +5,13 @@
 @import 'helpers/variable';
 @import 'helpers/functions';
 @import 'helpers/minixs';
+@import 'base/reset';
 
 @import 'base/base';
 @import 'components/btn';
 @import 'components/radio';
 @import 'components/checkbox';
 
+@import 'layout/header';
+@import 'layout/footer';
 @import 'pages/yb-index';
