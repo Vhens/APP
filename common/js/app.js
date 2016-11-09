@@ -2,7 +2,6 @@
 $(function(){
     banner('.swiper-container');
 })
-
  /**
   * 轮播图
   * @type {Swiper}
@@ -17,3 +16,4 @@ function banner(className) {
             autoplayDisableOnInteraction: true
         });
 }
+

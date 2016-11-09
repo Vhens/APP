@@ -70,6 +70,21 @@ video{
     margin:0;
     padding:0;
 }
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
 ul,ol{
     list-style:none;
 }
@@ -87,7 +102,28 @@ input:-ms-clear{display:none;}
 ::-webkit-input-placeholder,:-moz-placeholder,:-ms-input-placeholder,::input-placeholder{
     color:#ccc;
 }
-
+// 在手机上点击背后会有阴影的解决办法
+a{
+    -webkit-tap-highlight-color:rgba(255,0,0,0);
+}
+// 链接标签默认没有下划线，让激活状态和触发焦点时，虚线框为无
+a {
+    -webkit-appearance:none;
+    text-decoration: none;
+    color:#666;
+}
+a:focus,
+a:active {
+    outline: 0 !important;
+}
+// 链接下面的图片标签边框为无
+a img{
+    border:none;
+}
+// 去掉链接下划线
+a {
+    text-decoration: none;
+}
 select,
 input,
 textarea{
@@ -95,3 +131,4 @@ textarea{
     -webkit-appearance:none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+

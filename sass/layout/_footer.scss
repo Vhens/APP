@@ -1,0 +1,31 @@
+/**
+ * 底部样式
+ */
+.m-bottom{
+    margin-bottom:px2rem(100);
+}
+.footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-color:rgb(221, 221, 221);
+    ul{
+        font-size:0;
+    }
+    li{
+        box-sizing:-webkit-border-box;
+        display:inline-block;
+        width:20%;
+        height:px2rem(90);
+        text-align:center;
+        img{
+            margin-top:5px;
+            width:px2rem(53);
+            height:px2rem(47)
+        }
+        .name{
+            margin-top:3px;
+        }
+    }
+}
