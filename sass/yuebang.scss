@@ -12,8 +12,19 @@
 @import 'components/radio';
 @import 'components/checkbox';
 
+
+@import 'pages/yb-index';
+@import 'pages/yb-rank';
+@import 'pages/yb-openVip';
+@import 'pages/yb-qqCard';
+
 @import 'layout/header';
 @import 'layout/footer';
+<<<<<<< HEAD
+@import 'pages/yb-index';
+
+=======
 @import 'layout/notice';
 @import 'layout/nav';
 @import 'pages/yb-index';
+>>>>>>> refs/remotes/origin/master
