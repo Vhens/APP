@@ -1,9 +1,12 @@
 /**
  * 公共样式
  */
-body{
+body,html{
+    width:100%;
+    height:100%;
     background-color:$web-bg-color;
 }
+
 //当前选中背景色
 .cur-bg-color{
    background-color:nth($color,1);
