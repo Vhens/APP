@@ -1,0 +1,40 @@
+.notice-horizontal{
+    width: 100%;
+    color: #666;
+    padding:px2rem(5) 0;
+    background-color: #fff;
+    font-size:0;
+    .title{
+        img{
+            width:px2rem(178);
+            height:px2rem(33);
+            padding:5px 10px;
+            vertical-align:middle
+        }
+    }
+    .notice{
+        display: inline-block;
+        position:relative;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 60%;
+        line-height: .575rem;
+        height:.575rem;
+        vertical-align: middle;
+        .UlSlide{
+            position:absolute;
+            left:0px;
+            top:0;
+        }
+        li{
+            display: inline-block;
+            text-align: left;
+             //用于兼容IOS下公告内容长时,字体变大的bug
+            a{
+                color: inherit;
+                -webkit-text-size-adjust: none;
+            }
+        }
+    }
+}
+
