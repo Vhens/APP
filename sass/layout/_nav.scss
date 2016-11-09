@@ -1,0 +1,21 @@
+/**
+ * 导航栏
+ */
+.nav{
+    padding:px2rem(20) px2rem(10) px2rem(10);
+    background-color:#fff;
+    .sub-nav{
+        display:inline-block;
+        width:18.4%;
+        text-align:center;
+        font-size:0;
+        padding-bottom:px2rem(20);
+        img{
+            width:px2rem(76);
+            height:px2rem(77)
+        }
+        .nav-name{
+            padding-top:px2rem(20)
+        }
+    }
+}
