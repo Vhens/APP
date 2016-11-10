@@ -1,0 +1,97 @@
+/**
+ * 开通VIP
+ */
+.main{
+    .title{
+        text-align:center;
+        font-weight:bold;
+        padding:px2rem(40) 0;
+        background-color:#fff;
+    }
+    ul{
+        padding-bottom: px2rem(20);
+        li{
+            padding:px2rem(10) px2rem(20);
+            height:px2rem(120);
+            line-height:px2rem(115);
+       }
+        li:first-child{
+            border-bottom:1px solid #ccc;
+        }
+        .item{
+            width:89%;
+            border:2px solid #ccc;
+            padding:0 px2rem(30);
+            font-size:bold;
+            @include border-radius(8px);
+        }
+    }
+    .cur-dredge{
+        border-color:nth($color,1);
+        color:nth($color,1);
+        background-color:rgb(211, 232, 197);
+
+    }
+    .cur-dredge:after{
+        // display:none;
+        content:'√';
+        float:right;
+        font-size:26px;
+        font-weight:bold;
+        color:nth($color,1)
+    }
+
+    .open-dredge{
+        padding:px2rem(20) px2rem(20);
+        background-color:#fff;
+        .dredge-item{
+            font-size:0;
+            .item{
+                display:inline-block;
+                padding:px2rem(20) 0;
+                height:px2rem(40);
+                line-height:px2rem(40);
+                span{
+                    display:inline-block;
+                    width:px2rem(50);
+                    text-align:center;
+                    border:1px solid nth($color,1);
+                }
+                span:nth-child(1){
+                    border-right:none;
+                    -webkit-border-top-left-radius:4px;
+                    -webkit-border-bottom-left-radius:4px;
+                    border-top-left-radius:4px;
+                    border-bottom-left-radius:4px;
+                    color:nth($color,3);
+                }
+                span:nth-child(2){
+                     color:nth($color,1);
+                }
+                span:nth-child(3){
+                    border-left:none;
+                    -webkit-border-top-right-radius:4px;
+                    -webkit-border-bottom-right-radius:4px;
+                    border-top-right-radius:4px;
+                    border-bottom-right-radius:4px;
+                    color:nth($color,3);
+                }
+            }
+            .item:last-child{
+                float:right;
+            }
+            .btn{
+                width:100%;
+                padding:px2rem(20) 0;
+                background-color:nth($color,1);
+                color:#fff;
+                @include border-radius(8px);
+            }
+        }
+        .tip{
+            padding-bottom:px2rem(40);
+            color:#666;
+        }
+    }
+
+}
