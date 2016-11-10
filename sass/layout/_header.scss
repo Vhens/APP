@@ -19,17 +19,29 @@
             vertical-align:middle;
         }
     }
+    .top-item:nth-child(1) {
+        font-size:30px;
+        color:#fff;
+        vertical-align:middle;
+    }
     .top-item:nth-child(1) img{
         width:px2rem(54);
+
     }
     .top-item:nth-child(2) img{
         width:px2rem(111);
     }
-    .top-item:nth-child(3) input{
+    .top-item:nth-child(3) input,.search input{
         width:100%;
         height:px2rem(50);
         padding-left:10px;
         @include border-radius(4px);
+    }
+    .top-item:nth-child(3) .btn{
+        color:#fff;
+        background-color:nth($color,2);
+        vertical-align:middle;
+        @include border-radius(6px);
     }
     .top-item:nth-child(4) img{
         width:px2rem(51);
