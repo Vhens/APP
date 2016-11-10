@@ -16,4 +16,8 @@ function banner(className) {
             autoplayDisableOnInteraction: true
         });
 }
+/**
+ * VIP
+ */
+//@koala-prepend '../yuebang/yb_vip.js'
 

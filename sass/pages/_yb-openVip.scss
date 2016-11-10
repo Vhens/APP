@@ -1,7 +1,8 @@
 /**
  * 开通VIP
  */
-.main{
+.vip_box{
+    font-family:"微软雅黑";
     .title{
         text-align:center;
         font-weight:bold;
@@ -9,25 +10,26 @@
         background-color:#fff;
     }
     ul{
+        width:100%;
         padding-bottom: px2rem(20);
         li{
             padding:px2rem(10) px2rem(20);
-            height:px2rem(120);
-            line-height:px2rem(115);
-       }
+            height:px2rem(100);
+            line-height:px2rem(100);
+        }
         li:first-child{
-            border-bottom:1px solid #ccc;
+            border-bottom:1px solid #edecec;
+            margin-bottom:px2rem(20);
         }
         .item{
-            width:89%;
             border:2px solid #ccc;
             padding:0 px2rem(30);
             font-size:bold;
-            @include border-radius(8px);
+            @include border-radius(5px);
         }
     }
     .cur-dredge{
-        border-color:nth($color,1);
+        border-color:nth($color,1) !important;
         color:nth($color,1);
         background-color:rgb(211, 232, 197);
 
@@ -82,14 +84,16 @@
             }
             .btn{
                 width:100%;
+                height:px2rem(50);
+                line-height:px2rem(50);
                 padding:px2rem(20) 0;
                 background-color:nth($color,1);
                 color:#fff;
-                @include border-radius(8px);
+                @include border-radius(5px);
             }
         }
         .tip{
-            padding-bottom:px2rem(40);
+            padding-bottom:px2rem(150);
             color:#666;
         }
     }
