@@ -26,29 +26,33 @@
         <!-- 主体内容开始 -->
         <div class="main m-top  vip_box">
             <p class="title fs40">开通VIP</p>
-            <ul class="mt10 white-bg">
+            <ul class="mt10 white-bg coin">
                 <li class="fs36 fb">
                     当前悦币：<span class="red">0.00</span>
                 </li>
                 <li>
-                    <p class="item fs30">开通时长：1个月=8悦币</p>
+                    <p class="item fs30 cur-dredge" >开通时长：<span id="coin_month">1</span>个月= id="coin_price"<span>8</span>悦币
+
+                    </p>
                 </li>
                 <li>
-                    <p class="item fs30 cur-dredge">开通时长：2个月=15悦币</p>
+                    <p class="item fs30">开通时长：<span id="coin_month">2</span>个月=<span id="coin_price">15</span>悦币</p>
                 </li>
                 <li>
-                    <p class="item fs30">开通时长：3个月=20悦币</p>
+                    <p class="item fs30">开通时长：<span id="coin_month">3</span>个月=<span id="coin_price">20</span>悦币</p>
                 </li>
             </ul>
+            <input type="hidden" data-month="" data-price=""/>
+
             <div class="open-dredge mt20">
-                <div class="dredge-item">
+               <!--  <div class="dredge-item">
                     <p class="item fs26 fb">开通：2个月&nbsp;&nbsp;共计：15悦币</p>
                     <p class="item">
                         <span class="sub fs30 fb">-</span>
                         <span class="val fs30 fb">1</span>
                         <span class="add fs30 fb">+</span>
                     </p>
-                </div>
+                </div> -->
                 <div class="dredge-item tc mt30">
                     <a class="btn fs30" href="###">立即开通</a>
                 </div>
