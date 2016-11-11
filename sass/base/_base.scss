@@ -33,6 +33,11 @@ body,html{
 .db{display: block;}
 .dn{display: none;}
 /**
+ * 边框
+ */
+.bt{border-top:1px solid #ccc;}
+.bd{border-bottom:1px solid #ccc;}
+/**
  * 单行与多行溢出以...显示
  */
 .line-1{

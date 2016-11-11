@@ -16,17 +16,31 @@ function banner(className) {
             autoplayDisableOnInteraction: true
         });
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
+=======
+};
+//@koala-prepend '../yuebang/yb_brand_business.js'
+//@koala-prepend '../yuebang/yb_business-friend.js'
+>>>>>>> refs/remotes/origin/Vhen
 /**
  * VIP
  */
 //@koala-prepend '../yuebang/yb_vip.js'
 <<<<<<< HEAD
+<<<<<<< HEAD
 //@koala-prepend '../yuebang/yb_release.js'
 =======
 =======
+>>>>>>> refs/remotes/origin/master
+=======
 };
 //@koala-prepend '../yuebang/yb_brand_business.js'
+>>>>>>> refs/remotes/origin/Vhen
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
+=======
+=======
 >>>>>>> refs/remotes/origin/Vhen
 >>>>>>> refs/remotes/origin/master
 
