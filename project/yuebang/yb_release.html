@@ -6,7 +6,7 @@
     <meta content="yes" name="apple-mobile-web-app-capable" />
     <meta content="black" name="apple-mobile-web-app-status-bar-style" />
     <meta content="telephone=no" name="format-detection" />
-    <title>悦帮小哥-开通VIP</title>
+    <title>悦帮小哥-排名页</title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/yuebang.css">
     <link href="http://cdn.bootcss.com/Swiper/3.4.0/css/swiper.min.css" rel="stylesheet">
 </head>
@@ -24,45 +24,71 @@
        </header>
         <!-- 头部结束 -->
         <!-- 主体内容开始 -->
-        <div class="main m-top  vip_box">
-            <p class="title fs40">开通VIP</p>
-            <ul class="mt10 white-bg coin">
-                <li class="fs36 fb">
-                    当前悦币：<span class="red">0.00</span>
-                </li>
-                <li>
-                    <p class="item fs30 cur-dredge" >开通时长：<span id="coin_month">1</span>个月=<span id="coin_price">8</span>悦币
-                    </p>
-                </li>
-                <li>
-                    <p class="item fs30">开通时长：<span id="coin_month">2</span>个月=<span id="coin_price">15</span>悦币</p>
-                </li>
-                <li>
-                    <p class="item fs30">开通时长：<span id="coin_month">3</span>个月=<span id="coin_price">20</span>悦币</p>
+        <div class="main release m-top m-bottom fs28">
+            <ul class="white-bg fs28">
+                <li>选择</li>
+                <li class="choose">
+                    <div>
+                        <a class="btn active" href="###">群二维码</a>
+                        <a class="btn" href="###">个人二维码</a></div>
+                        <div>
+                        <div class="radio dib">
+                            <label class="on" for="wx"><span class="on">√</span></label>
+                            <input type="radio" checked="checked" value="微信" id="wx" name=""/>微信
+                        </div>
+                        <div class="radio dib">
+                            <label for="qq"><span class="off">√</span></label>
+                            <input type="radio" value="QQ" name="" id="qq" />QQ
+                        </div>
+
+
                 </li>
             </ul>
-            <input type="hidden" data-month="" data-price=""/>
-
-            <div class="open-dredge mt20">
-               <!--  <div class="dredge-item">
-                    <p class="item fs26 fb">开通：2个月&nbsp;&nbsp;共计：15悦币</p>
-                    <p class="item">
-                        <span class="sub fs30 fb">-</span>
-                        <span class="val fs30 fb">1</span>
-                        <span class="add fs30 fb">+</span>
-                    </p>
-                </div> -->
-                <div class="dredge-item tc mt30">
-                    <a class="btn fs30" href="###">立即开通</a>
-                </div>
-                <p class="fs24 mt30 tc tip">
-                置顶规则&nbsp;&nbsp;&nbsp;&nbsp;常见问题&nbsp;&nbsp;&nbsp;&nbsp;积分规则&nbsp;&nbsp;&nbsp;&nbsp;VIP特权
+            <ul class="white-bg fs28">
+                <li>上传</li>
+                <li class="upload">
+                    <a class="btn" href="###">点击上传</a>
+                    <span>如何获取二维码？</span>
+                </li>
+            </ul>
+            <ul class="white-bg fs28">
+                <li>地域</li>
+                <li class="region">
+                    <a class="btn active" href="###">省</a>
+                    <a class="btn" href="###">市</a>
+                </li>
+            </ul>
+            <ul class="white-bg fs28">
+                <li>标题</li>
+                <li class="title">
+                    <textarea placeholder="名片标题   5-15个字" cols="30"  rows="1"></textarea>
+                </li>
+            </ul>
+            <ul class="white-bg fs28">
+                <li>描述</li>
+                <li class="describe">
+                    <textarea placeholder="名片描述   50-200字" cols="30"  rows="3"></textarea>
+                </li>
+            </ul>
+            <div class="notice">
+                <p class="p1">
+                当前积分&nbsp;<span>90.00</span>&nbsp;&nbsp;&nbsp;发布名片扣除<span>2</span>积分<br/>
+                <span style="color: red;">VIP</span>用户发布名片不消耗积分，<a href="###">点击开通</a>
                 </p>
+                <p class="p2">发布名片须知:<br/>
+                1.群二维码只有7天限期，过期需要重新发布。<br/>
+                2.若发现违法违规内容，我们将依据记录交给公安机关处理。<br/>
+                3.发布即表示同意<span style="color:#2268b3;">《悦帮小哥服务协议》</span>
+                </p>
+            </div>
+
+            <div class="releaseBtn white-bg">
+                <a class="btn" href="###">确认发布</a>
             </div>
         </div>
         <!-- 主体内容结束 -->
         <!-- 底部开始 -->
-         <footer class="footer">
+        <footer class="footer">
             <ul>
                 <li>
                     <a href="###">

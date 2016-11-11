@@ -20,4 +20,5 @@ function banner(className) {
  * VIP
  */
 //@koala-prepend '../yuebang/yb_vip.js'
+//@koala-prepend '../yuebang/yb_release.js'
 
