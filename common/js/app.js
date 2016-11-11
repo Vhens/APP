@@ -15,5 +15,6 @@ function banner(className) {
             scrollbar:'.swiper-scrollbar',
             autoplayDisableOnInteraction: true
         });
-}
+};
+//@koala-prepend '../yuebang/yb_brand_business.js'
 
