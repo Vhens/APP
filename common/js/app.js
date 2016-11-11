@@ -15,6 +15,14 @@ function banner(className) {
             scrollbar:'.swiper-scrollbar',
             autoplayDisableOnInteraction: true
         });
+<<<<<<< HEAD
 };
 //@koala-prepend '../yuebang/yb_brand_business.js'
+=======
+}
+/**
+ * VIP
+ */
+//@koala-prepend '../yuebang/yb_vip.js'
+>>>>>>> refs/remotes/origin/master
 
