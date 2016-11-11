@@ -8,6 +8,7 @@
     <meta content="telephone=no" name="format-detection" />
     <title>悦帮小哥-品牌商</title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/yuebang.css">
+    <link href="http://cdn.bootcss.com/raty/2.7.1/jquery.raty.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- 主体开始 -->
@@ -15,19 +16,118 @@
         <!-- 头部开始 -->
        <header class="header">
             <ul>
-                <!-- <li class="top-item w10"><</li>
-                <li class="top-item w50"><input type="text" placeholder="搜索个人、群名片关键词"></li>
-                <li class="top-item w20"></li> -->
-                <li class="top-item w10"><</li>
-
-                <li class="top-item search w60"><input type="search" placeholder="&Alpha;搜索关键词"></li>
+                <li class="top-item w10 tc"><</li>
+                <li class="top-item search w55"><input type="text" placeholder="搜索个人、群名片关键词" class="fs24"></li>
                 <li class="top-item"><a class="fs30 btn" href="###">积分排名</a></li>
             </ul>
        </header>
         <!-- 头部结束 -->
         <!-- 主体内容开始 -->
-        <div class="main m-top m-bottom">
-
+        <div class="main brand m-top m-bottom">
+            <!-- tab start -->
+            <ul class="tab" id="tab">
+                <li><span class="fs30 cur-tab">最新</span></li>
+                <li><span class="fs30">品牌商</span></li>
+                <li><span class="fs30">代理商</span></li>
+            </ul>
+            <!-- tab end -->
+            <!-- 最新开始 -->
+            <section class="page m-tab">
+                <div class="content mb10">
+                    <div class="title">
+                        <img src="img/tx.png">
+                        <span class="fs30 fb dai-name"> 水滋源</span>
+                        <span class="s-brand fs18">深海护肤品牌</span>
+                        <span class="star fr"data-score="3"></span>
+                    </div>
+                    <div class="pic">
+                        <p class="pic-item"><img src="img/img3.png" ></p>
+                        <p class="pic-item"><img src="img/img3.png" ></p>
+                        <p class="pic-item"><img src="img/img3.png" ></p>
+                    </div>
+                    <div class="msg">
+                        <span class="info fs28"> 127</span>
+                        <span class="time red fs28">上次刷新时间：17分钟之前</span>
+                        <span class="zan fs28">607</span>
+                    </div>
+                </div>
+                <div class="content mb10">
+                    <div class="title">
+                        <img src="img/tx.png">
+                        <span class="fs30 fb pin-name"> 水滋源</span>
+                        <span class="s-brand fs18">深海护肤品牌</span>
+                        <span class="star fr"data-score="3"></span>
+                    </div>
+                    <div class="pic">
+                        <p class="pic-item"><img src="img/img3.png" ></p>
+                        <p class="pic-item"><img src="img/img3.png" ></p>
+                        <p class="pic-item"><img src="img/img3.png" ></p>
+                    </div>
+                    <div class="msg">
+                        <span class="info fs28"> 27</span>
+                        <span class="time red fs28">上次刷新时间：7分钟之前</span>
+                        <span class="zan fs28">67</span>
+                    </div>
+                </div>
+            </section>
+            <!-- 最新结束 -->
+            <!-- 品牌商开始 -->
+            <section class="page dn m-tab">
+                <div class="content mb10">
+                    <div class="title">
+                        <img src="img/tx.png">
+                        <span class="fs30 fb pin-name"> 水滋源</span>
+                        <span class="s-brand fs18">深海护肤品牌</span>
+                        <span class="star fr"data-score="3"></span>
+                    </div>
+                    <div class="pic">
+                        <p class="pic-item"><img src="img/img3.png" ></p>
+                        <p class="pic-item"><img src="img/img3.png" ></p>
+                        <p class="pic-item"><img src="img/img3.png" ></p>
+                    </div>
+                    <div class="msg">
+                        <span class="info fs28"> 27</span>
+                        <span class="time red fs28">上次刷新时间：7分钟之前</span>
+                        <span class="zan fs28">67</span>
+                    </div>
+                </div>
+            </section>
+            <!-- 品牌商结束 -->
+            <!-- 代理商开始 -->
+             <section class="page dn m-tab">
+                <div class="content mb10">
+                    <div class="title">
+                        <img src="img/tx.png">
+                        <span class="fs30 fb dai-name"> 水滋源</span>
+                        <span class="s-brand fs18">深海护肤品牌</span>
+                        <span class="star fr"data-score="3"></span>
+                    </div>
+                    <div class="pic">
+                        <p class="pic-item"><img src="img/img3.png" ></p>
+                        <p class="pic-item"><img src="img/img3.png" ></p>
+                        <p class="pic-item"><img src="img/img3.png" ></p>
+                    </div>
+                    <div class="msg">
+                        <span class="info fs28"> 27</span>
+                        <span class="time red fs28">上次刷新时间：7分钟之前</span>
+                        <span class="zan fs28">67</span>
+                    </div>
+                </div>
+             </section>
+            <!-- 代理商结束 -->
+            <!-- 分页开始 -->
+            <div class="paging mt20">
+                <p class="page-item">
+                    <a class="btn fs30" id="up-page" href="###">上一页</a>
+                </p>
+                <p class="page-item tc fs30">
+                    <span class="fs30" id="cur-page">1</span>/<span class="fs30" id="total-page">5</span>
+                </p>
+                <p class="page-item tr">
+                    <a class="btn fs30" id="down-page" href="###">下一页</a>
+                </p>
+            </div>
+            <!-- 分页结束 -->
         </div>
         <!-- 主体内容结束 -->
         <!-- 底部开始 -->
@@ -69,6 +169,7 @@
     </div>
     <!-- 主体结束 -->
     <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/raty/2.7.1/jquery.raty.min.js"></script>
     <script type="text/javascript" src="../../common/js/public.min.js"></script>
     <script type="text/javascript" src="../../common/js/app.min.js"></script>
 </body>

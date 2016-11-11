@@ -32,12 +32,22 @@
         width:px2rem(111);
     }
     .top-item:nth-child(3) input,.search input{
-        width:100%;
         height:px2rem(50);
-        padding-left:10px;
+        padding-left:px2rem(60);
+        background:url(../yuebang/img/search.png) no-repeat;
+        background-size:px2rem(40) px2rem(40);
+        background-position:4px 4px;
+        background-color:#fff;
+        vertical-align:middle;
         @include border-radius(4px);
     }
+    .search input{
+         width:90%;
+
+    }
     .top-item:nth-child(3) .btn{
+        padding:px2rem(10) px2rem(20);
+        margin-left:px2rem(40);
         color:#fff;
         background-color:nth($color,2);
         vertical-align:middle;
