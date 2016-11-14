@@ -85,14 +85,14 @@
                 color:#666;
             }
         }
-        .pic{
+        .my-gallery{
             width:100%;
             font-size:0;
-            .pic-item{
+            figure{
                 display:inline-block;
                 padding:px2rem(20) 0;
             }
-            .pic-item:not(:first-child){
+            figure:not(:first-child){
                 margin-left:px2rem(22);
             }
             img{

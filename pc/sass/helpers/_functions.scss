@@ -1,10 +1,4 @@
 /**
- *px转rem
- */
-@function px2rem($px){
-    @return $px * 640 / $designWidth / 64 + rem;
-}
-/**
  * 自定义宽度
  */
 @for $i from 1 to 21{
@@ -20,7 +14,7 @@
  * 自定义字体大小
  */
 @for $i from 6 to 22{
-    .fs#{$i * 2}{font-size:$i * 2rem / 64}
+    .fs#{$i * 2}{font-size:$i * 2px}
 }
 /**
  * 自定义外边距
@@ -28,25 +22,25 @@
  * mtb上下、mfr左右
  */
 @for $i from 1 to 21{
-    .mt#{$i * 5}{margin-top:5rem *$i / 64};
+    .mt#{$i * 5}{margin-top:5px *$i};
 }
 @for $i from 1 to 21{
-    .mr#{$i * 5}{margin-top:5rem *$i / 64};
+    .mr#{$i * 5}{margin-top:5px *$i};
 }
 @for $i from 1 to 21{
-    .mb#{$i * 5}{margin-top:5rem *$i / 64};
+    .mb#{$i * 5}{margin-top:5px *$i};
 }
 @for $i from 1 to 21{
-    .mf#{$i * 5}{margin-top:5rem *$i / 64};
+    .mf#{$i * 5}{margin-top:5px *$i};
 }
 @for $i from 1 to 12{
-    .mtb#{$i * 5}{margin:5rem *$i / 64 0};
+    .mtb#{$i * 5}{margin:5px *$i 0};
 }
 @for $i from 1 to 12{
-    .mfr#{$i * 5}{margin:0 5rem *$i / 64};
+    .mfr#{$i * 5}{margin:0 5px *$i};
 }
 @for $i from 1 to 12{
-    .mtrbf#{$i * 5}{margin:5rem *$i / 64};
+    .mtrbf#{$i * 5}{margin:5px *$i};
 }
 /**
  * 自定义内边距
@@ -54,31 +48,31 @@
  * ptb上下、pfr左右
  */
 @for $i from 1 to 21{
-    .pt#{$i * 5}{padding-top:5rem *$i / 64};
+    .pt#{$i * 5}{padding-top:5px *$i};
 }
 @for $i from 1 to 21{
-    .pr#{$i * 5}{padding-top:5rem *$i / 64};
+    .pr#{$i * 5}{padding-top:5px *$i};
 }
 @for $i from 1 to 21{
-    .pb#{$i * 5}{padding-top:5rem *$i / 64};
+    .pb#{$i * 5}{padding-top:5px *$i};
 }
 @for $i from 1 to 21{
-    .pf#{$i * 5}{padding-top:5rem *$i / 64};
+    .pf#{$i * 5}{padding-top:5px *$i};
 }
 @for $i from 1 to 12{
-    .ptb#{$i * 5}{padding:5rem *$i / 64 0};
+    .ptb#{$i * 5}{padding:5px *$i 0};
 }
 @for $i from 1 to 12{
-    .pfr#{$i * 5}{padding:0 5rem *$i / 64};
+    .pfr#{$i * 5}{padding:0 5px *$i};
 }
 @for $i from 1 to 12{
-    .ptrbf#{$i * 5}{padding:5rem *$i / 64};
+    .ptrbf#{$i * 5}{padding:5px *$i};
 }
 /**
  * 自定义行高
  */
 @for $i from 1 to 15{
-    .lh#{$i * 5}{line-height:5rem *$i / 64};
+    .lh#{$i * 5}{line-height:5px *$i};
 }
 /**
  * 自定义层级
