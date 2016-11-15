@@ -11,6 +11,21 @@ $(function(){
             nextButton:'.swiper-button-next',
             autoplayDisableOnInteraction: true
         });
+     /**
+      * tab
+      */
+     $("#nav-memu").find('.nav-memu-item').hover(function(){
+        var _this=$(this);
+        _this.find('.nav-sub-memu').addClass('cur-nav').parent().siblings().children().removeClass('cur-nav');
+         _this.find('.nav-memu-page').stop(true,true).slideDown(400);
+     },function(){
+        var _this=$(this);
+       _this.find('.nav-sub-memu').removeClass('cur-nav');
+       _this.find('.nav-memu-page').stop(true,true).slideUp("fast");
+     });
+     $('.nav-sub-item').hover(function(){
+        $(this).children().addClass('cur-sub-nav').parent().siblings().children().removeClass('cur-sub-nav');
+     })
 });
 function banner(className) {
      var topSlider=new Swiper(className, {
