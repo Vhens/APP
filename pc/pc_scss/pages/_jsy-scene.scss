@@ -1,0 +1,32 @@
+.scene{
+    .sceneInfo{
+        padding:25px 50px;
+        background-color:#ededed;
+        margin-top:40px;
+        .headImg{
+            width:20px;
+            height:25px;
+            img{
+                width:100%;
+                height:100%;
+                vertical-align:middle;
+            }
+        }
+        .head{
+            margin-left:10px;
+            vertical-align:text-top;
+        }
+        .img{
+            height:350px;
+            img{
+                width:100%;
+                height:100%;
+            }
+        }
+        .line{
+            width:5px;
+            height:28px;
+            background-color:#E60012;
+        }
+    }
+}
