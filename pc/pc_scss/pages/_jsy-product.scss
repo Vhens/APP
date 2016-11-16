@@ -6,12 +6,25 @@
     padding:80px 8%;
     width:84%;
     box-border:box-sizing;
-    .case_left{
-        width:20%;
+
+    .product_left{
+        width:21%;
         float:left;
         p{
             display: inline-block;
             margin-bottom:15px;
+            a{
+                line-height:20px;
+            }
+            a.active{
+                color:#E60012;
+            }
+        }
+        p.show{
+            display:block;
+        }
+        p.hide{
+            display:none;
         }
         span{
             display:block;
@@ -20,37 +33,46 @@
             height:2px;
         }
         ul{
-            padding:10px 20px;
             li{
-                margin-bottom:10px;
+                padding:10px 0;
+                border-bottom:1px solid black;
+                p{
+                    display:block;
+                    margin-left:21px;
+                    margin-top:5px;
+                }
                 a{
                     color:black;
                 }
             }
-            li.active{
-                a{
-                   color:#E60012;
-                }
+            // li.active{
+            //     a{
+            //        color:#E60012;
+            //     }
+            // }
+            img{
+                width:15px;
+                height:3px;
+                vertical-align:middle;
             }
         }
     }
-    .case_right{
+
+    .product_right{
         width:72%;
         float:left;
         margin-left:6%;
         span{
             color:#E60012;
         }
+
     }
-
 }
-
-.case{
+.product{
     // 右边内容
-    .caseInfo{
+    .productInfo{
         margin-top:40px;
         ul{
-            border-bottom:1px solid black;
             li{
                 margin-right:4.5%;
                 margin-bottom:20px;
@@ -79,17 +101,6 @@
             li:nth-child(9){
                 margin-right:0;
             }
-        }
-    }
-    .udpage{
-        position:absolute;
-        right:15%;
-        span{
-            color:black;
-        }
-        a{
-            margin-left:0;
-            color:black;
         }
     }
 }
