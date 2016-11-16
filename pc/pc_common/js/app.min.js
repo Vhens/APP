@@ -41,15 +41,26 @@ $(function(){
   select('.banner .swiper-button-prev','url(../jsy/img/left-h.png)','url(../jsy/img/left.png)');
   //next
   select('.banner .swiper-button-next','url(../jsy/img/right-h.png)','url(../jsy/img/right.png)');
+  //qq wx
+    hover('.h-wx','wx','wx-h');
+    hover('.h-qq','qq','qq-h');
 });
-
-function select(className,newurl,oldurl){
+function hover(className,inRemoveUrl,outAddUrl){
+    $(className).hover(function(){
+      $(this).removeClass(inRemoveUrl);
+      $(this).addClass(outAddUrl);
+   },function(){
+      $(this).removeClass(outAddUrl);
+      $(this).addClass(inRemoveUrl);
+   });
+}
+function select(className,newurl,oldurl,type){
     $(className).hover(function(){
         $(this).css('background-image',newurl);
    },function(){
         $(this).css('background-image',oldurl);
-   })
-}
+   });
+};
 function banner(className) {
      var topSlider=new Swiper(className, {
             pagination : '.swiper-pagination',

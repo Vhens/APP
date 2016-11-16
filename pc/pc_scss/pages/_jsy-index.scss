@@ -299,7 +299,9 @@
                 height:20px;
                 line-height:20px;
                 color:#666;
-
+                a:hover{
+                    color:red;
+                }
             }
             li:before{
                 content:'';
@@ -313,13 +315,13 @@
         .sub-item:not(:last-child){
             margin-right:60px;
         }
-        .wx{
+        .wx.wx-h{
             display:inline-block;
             // width:
             border-right:1px solid #666;
             padding-right:10px;
         }
-        .wx:before,.qq:before{
+        .wx:before,.wx-h:before,.qq:before,.qq-h:before{
             content:'';
             display:inline-block;
             width:25px;
@@ -332,8 +334,17 @@
              background:url(../jsy/img/wx.png) no-repeat;
              background-size:18px 18px;
          }
-        .qq:before{
+        .wx-h:before{
+             background:url(../jsy/img/wx-h.png) no-repeat;
+             background-size:18px 18px;
+         }
+         .qq:before{
              background:url(../jsy/img/qq.png) no-repeat;
+              background-size:18px 18px;
+              margin-left:10px;
+         }
+        .qq-h:before{
+             background:url(../jsy/img/qq-h.png) no-repeat;
               background-size:18px 18px;
               margin-left:10px;
          }
