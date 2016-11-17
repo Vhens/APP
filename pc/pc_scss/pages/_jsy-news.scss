@@ -1,10 +1,11 @@
-.main{
+.content{
     font-family:"黑体";
     position:relative;
     min-width:900px;
     padding:80px 8%;
     width:84%;
     box-border:box-sizing;
+
     .news_left{
         width:20%;
         float:left;
@@ -17,6 +18,9 @@
             background-color:gray;
             width:100%;
             height:2px;
+        }
+        a{
+            margin-left:0;
         }
         ul{
             padding:10px 0;
@@ -51,6 +55,9 @@
 }
 .news{
     // 右边内容
+    a{
+        margin-left:0;
+    }
     .newsInfo{
         padding:25px 50px;
         background-color:#ededed;
@@ -63,8 +70,9 @@
                 }
                 a{
                     color:black;
-                    width:70%;
+                    width:69%;
                     display:inline-block;
+                    margin-left:0;
                     font-family:"黑体";
                     padding:10px 30px;
                     span{
@@ -99,6 +107,7 @@
             color:black;
         }
         a{
+            margin-left:0;
             color:black;
         }
     }
