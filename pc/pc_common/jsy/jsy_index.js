@@ -41,6 +41,9 @@ $(function(){
   select('.banner .swiper-button-prev','url(../jsy/img/left-h.png)','url(../jsy/img/left.png)');
   //next
   select('.banner .swiper-button-next','url(../jsy/img/right-h.png)','url(../jsy/img/right.png)');
+  //hold-prev、hold-next
+  // select('.hold-prev','url(../jsy/img/left-h.png)','url(../jsy/img/left.png)');
+  // select('.hold-next','url(../jsy/img/left-h.png)','url(../jsy/img/left.png)');
   //qq wx
     hover('.h-wx','wx','wx-h');
     hover('.h-qq','qq','qq-h');
@@ -69,6 +72,8 @@ function banner(className) {
             centeredSlides: true,
             autoplay: 3000,
             loop: true,
+            prevButton:'.swiper-button-prev',
+            nextButton:'.swiper-button-next',
             autoplayDisableOnInteraction: true
         });
 }
