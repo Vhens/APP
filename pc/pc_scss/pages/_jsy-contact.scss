@@ -3,14 +3,10 @@
     font-family:"黑体";
     position:relative;
     min-width:900px;
-<<<<<<< HEAD
-    // padding:150px 8%;
-=======
     padding:80px 8%;
->>>>>>> refs/remotes/origin/master
     width:84%;
     box-border:box-sizing;
-    .profile_left{
+    .contact_left{
         width:20%;
         float:left;
         p{
@@ -38,7 +34,7 @@
             }
         }
     }
-    .profile_right{
+    .contact_right{
         width:72%;
         float:left;
         margin-left:6%;
@@ -49,9 +45,9 @@
 
 }
 
-.profile{
+.contact{
     // 右边内容
-    .profileInfo{
+    .contactInfo{
         padding:25px 50px;
         background-color:#ededed;
         margin-top:40px;
@@ -76,6 +72,22 @@
                 height:100%;
             }
         }
-
+        .img2{
+            height:300px;
+            img{
+                width:100%;
+                height:100%;
+            }
+        }
+        .info{
+            img{
+                width:90px;
+                height:108px;
+                margin-right:40px;
+            }
+            p{
+                line-height:20px;
+            }
+        }
     }
 }
