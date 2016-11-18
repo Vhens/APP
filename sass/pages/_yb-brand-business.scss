@@ -4,7 +4,6 @@
 .m-tab{
     margin-top:px2rem(142);
 }
-.brand{
     .tab{
         position:fixed;
         top:px2rem(72);
@@ -26,11 +25,12 @@
         }
         .cur-tab{
             display:inline-block;
-            width:50%;
+            widows: 55%;
             border-bottom:1px solid nth($color,1);
             color:nth($color,1);
         }
     }
+.brand{
     .page{
         .content{
             padding:px2rem(20);
