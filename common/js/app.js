@@ -23,24 +23,8 @@ function banner(className) {
  * VIP
  */
 //@koala-prepend '../yuebang/yb_vip.js'
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 //@koala-prepend '../yuebang/yb_release.js'
-=======
-=======
->>>>>>> refs/remotes/origin/master
-=======
-};
 //@koala-prepend '../yuebang/yb_brand_business.js'
->>>>>>> refs/remotes/origin/Vhen
-<<<<<<< HEAD
->>>>>>> refs/remotes/origin/master
-=======
-=======
->>>>>>> refs/remotes/origin/Vhen
->>>>>>> refs/remotes/origin/master
-=======
 //@koala-prepend '../yuebang/yb_brand_business.js'
->>>>>>> refs/remotes/origin/master
+
 

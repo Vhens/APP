@@ -1,8 +1,7 @@
-
-.content{
+.product-content,.left-memu{
     font-family:"黑体";
     position:relative;
-    min-width:900px;
+    // min-width:900px;
     padding:80px 8%;
     width:84%;
     box-border:box-sizing;
@@ -54,6 +53,7 @@
                 width:15px;
                 height:3px;
                 vertical-align:middle;
+                margin-top: -19px;
             }
         }
     }
@@ -61,6 +61,7 @@
     .product_right{
         width:72%;
         float:left;
+        height:100%;
         margin-left:6%;
         span{
             color:#E60012;
@@ -68,7 +69,7 @@
 
     }
 }
-.product{
+.products{
     // 右边内容
     .productInfo{
         margin-top:40px;
