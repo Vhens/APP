@@ -12,7 +12,7 @@ $(function(){
             autoplayDisableOnInteraction: true
         });
      /**
-      * tab
+      * nav
       */
      $("#nav-memu").find('.nav-memu-item').hover(function(){
         var _this=$(this);
@@ -20,13 +20,50 @@ $(function(){
          _this.find('.nav-memu-page').stop(true,true).slideDown(400);
      },function(){
         var _this=$(this);
-       _this.find('.nav-sub-memu').removeClass('cur-nav');
-       _this.find('.nav-memu-page').stop(true,true).slideUp("fast");
+        _this.find('.nav-sub-memu').removeClass('cur-nav');
+        _this.find('.nav-memu-page').stop(true,true).slideUp("fast");
+
      });
-     $('.nav-sub-item').hover(function(){
-        $(this).children().addClass('cur-sub-nav').parent().siblings().children().removeClass('cur-sub-nav');
-     })
+     // $('.nav-sub-item').hover(function(){
+     //    $(this).children().addClass('cur-sub-nav').parent().siblings().children().removeClass('cur-sub-nav');
+     // })
+     /**
+      * slide
+      */
+   $('.banner .swiper-slide').hover(function(){
+      $(this).find('img').attr('src',"img/bg1.png").addClass('selectimg');
+      $(this).find('a').append('<span class="more fs12">MORE</span>');
+   },function(){
+      $(this).find('img').attr('src',"img/bg.png").removeClass('selectimg');
+       $(this).find('.more').remove();
+   });
+   //prev
+  select('.banner .swiper-button-prev','url(../jsy/img/left-h.png)','url(../jsy/img/left.png)');
+  //next
+  select('.banner .swiper-button-next','url(../jsy/img/right-h.png)','url(../jsy/img/right.png)');
+  //hold-prev、hold-next
+  // select('.hold-prev','url(../jsy/img/left-h.png)','url(../jsy/img/left.png)');
+  // select('.hold-next','url(../jsy/img/left-h.png)','url(../jsy/img/left.png)');
+  //qq wx
+    hover('.h-wx','wx','wx-h');
+    hover('.h-qq','qq','qq-h');
 });
+function hover(className,inRemoveUrl,outAddUrl){
+    $(className).hover(function(){
+      $(this).removeClass(inRemoveUrl);
+      $(this).addClass(outAddUrl);
+   },function(){
+      $(this).removeClass(outAddUrl);
+      $(this).addClass(inRemoveUrl);
+   });
+}
+function select(className,newurl,oldurl,type){
+    $(className).hover(function(){
+        $(this).css('background-image',newurl);
+   },function(){
+        $(this).css('background-image',oldurl);
+   });
+};
 function banner(className) {
      var topSlider=new Swiper(className, {
             pagination : '.swiper-pagination',
@@ -35,6 +72,8 @@ function banner(className) {
             centeredSlides: true,
             autoplay: 3000,
             loop: true,
+            prevButton:'.swiper-button-prev',
+            nextButton:'.swiper-button-next',
             autoplayDisableOnInteraction: true
         });
 }
