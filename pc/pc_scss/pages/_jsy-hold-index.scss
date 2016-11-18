@@ -245,7 +245,7 @@
                 width:10px;
                 height:10px;
                 background-color:#666;
-                @include transform(translate(-5px,-6px));
+                @include transform(translate(-5px,-8px));
                 @include border-radius(50%);
             }
             &:hover{
