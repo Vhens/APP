@@ -4,6 +4,7 @@ $(".vip_box ul li").on("click",function(){
     var month,price;
     month=$(this).find("#coin_month").text();
     price=$(this).find("#coin_price").text();
+    alert(month+" "+price);
     $('input[type="hidden"]').attr('data-month',month);
     $('input[type="hidden"]').attr('data-price',price);
 })
