@@ -15,54 +15,32 @@
             padding-right:px2rem(20);
         }
         .choose{
-            a{
-                padding:px2rem(15) px2rem(5);
+            .status{
+                width:px2rem(140);
+            }
+            .btn{
+                padding:px2rem(15) px2rem(25);
                 @include border-radius(5px);
                 margin-bottom:px2rem(20);
                 border:1px solid nth($color,1);
                 margin-right:px2rem(30);
             }
-            a.active{
+            .btn.active{
                 color:white;
                 background-color:nth($color,1);
-            }
-            .radio{
-                width:px2rem(120);
-                margin-right:px2rem(20);
-                input,label{
-                    vertical-align:middle;
-                }
-                label{
-                    text-align:center;
-                    display:inline-block;
-                    border:2px solid black;
-                    width:px2rem(28);
-                    height:px2rem(28);
-                    color:nth($color,3);
-                    font-weight:bold;
-                    @include border-radius(45px);
-                }
-                label.on{
-                    border-color:nth($color,3);
-                }
-                span.on{
-                    display:block;
-                }
-                span.off{
-                    display:none;
-                }
-
             }
         }
+        .radio{
+           display:inline-block;
+           span{
+                display:inline-block;
+                @include transform(translateY(-5px))
+           }
+        }
         .upload{
-            a{
-                padding:px2rem(50) px2rem(5);
-                @include border-radius(5px);
-                background-color:nth($color,1);
-                color:white;
-                margin-right:px2rem(20);
-            }
-            span{
+            .ewm{
+                display:inline-block;
+                @include transform(translate(10px,-40px));
                 color:nth($color,3);
             }
         }
