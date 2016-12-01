@@ -3,7 +3,7 @@ $(function(){
      var topSlider=new Swiper('.swiper-container1', {
             slidesPerView: 1,
             centeredSlides: true,
-            autoplay: 3000,
+            autoplay: 2000,
             loop: true,
             slidesPerView : 5,
             spaceBetween : 20,
@@ -14,16 +14,18 @@ $(function(){
      /**
       * nav
       */
-     $("#nav-memu").find('.nav-memu-item').hover(function(){
-        var _this=$(this);
-        _this.find('.nav-sub-memu').addClass('cur-nav').parent().siblings().children().removeClass('cur-nav');
-         _this.find('.nav-memu-page').stop(true,true).slideDown(400);
-     },function(){
-        var _this=$(this);
-        _this.find('.nav-sub-memu').removeClass('cur-nav');
-        _this.find('.nav-memu-page').stop(true,true).slideUp("fast");
+     // $("#nav-memu").find('.nav-memu-item').hover(function(){
+     //    var _this=$(this);
+     //    _this.find('.nav-sub-memu').addClass('cur-nav').parent().siblings().children().removeClass('cur-nav');
+     //     _this.find('.nav-memu-page').stop(true,true).slideDown(400);
+     // },function(){
+     //    var _this=$(this);
+     //    // var
+     //    // if()
+     //    _this.find('.nav-sub-memu').addClass('cur-nav');
+     //    _this.find('.nav-memu-page').stop(true,true).slideUp("fast");
 
-     });
+     // });
      // $('.nav-sub-item').hover(function(){
      //    $(this).children().addClass('cur-sub-nav').parent().siblings().children().removeClass('cur-sub-nav');
      // })
@@ -70,10 +72,25 @@ function banner(className) {
             paginationHide :true,
             slidesPerView: 1,
             centeredSlides: true,
-            autoplay: 3000,
+            autoplay: 2000,
             loop: true,
             prevButton:'.swiper-button-prev',
             nextButton:'.swiper-button-next',
             autoplayDisableOnInteraction: true
         });
+}
+function AddFavorite(siteUrl,siteTitle){
+   siteUrl = encodeURI(siteUrl);
+   var ctrl = (navigator.userAgent.toLowerCase()).indexOf('mac') != -1 ? 'Command/Cmd': 'CTRL';
+  if(document.all){
+    try{
+      window.external.addFavorite(siteUrl,siteTitle);
+    }catch(e){
+      alert("加入收藏失败，请使用"+ctrl+"+D进行添加！");
+    }
+  }else if(window.sidebar){
+    window.sidebar.addPanel(siteTitle, siteUrl, "");
+  }else{
+    alert("加入收藏失败，请使用"+ctrl+"+D进行添加！");
+  }
 }

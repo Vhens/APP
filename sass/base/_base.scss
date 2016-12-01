@@ -7,6 +7,9 @@ body,html{
     width:100%;
     height:100%;
     background-color:$web-bg-color;
+    min-width:320px;
+    max-width:640px;
+    margin:0 auto;
 }
 
 //当前选中背景色

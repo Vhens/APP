@@ -38,9 +38,9 @@
         width:72%;
         float:left;
         margin-left:6%;
-        span{
-            color:#E60012;
-        }
+        // span{
+        //     color:#E60012;
+        // }
     }
 
 }
@@ -80,10 +80,12 @@
             }
         }
         .info{
+            vertical-align: top;
             img{
                 width:90px;
                 height:108px;
                 margin-right:40px;
+                vertical-align:top;
             }
             p{
                 line-height:20px;
