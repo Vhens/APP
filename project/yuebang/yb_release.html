@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>悦帮小哥-排名页</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/yuebang.css">
+    <link href="http://cdn.bootcss.com/Swiper/3.4.0/css/swiper.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 主体开始 -->
+    <div class="container">
+        <!-- 头部开始 -->
+       <header class="header">
+            <ul>
+                <li class="top-item w10"><img src="img/category.png" alt=""></li>
+                <li class="top-item w20"><img src="img/logo.png" alt=""></li>
+                <li class="top-item w60"><input type="text" placeholder="搜索关键词" class="w80 fs24"></li>
+                <li class="top-item"><img src="img/info.png" alt=""></li>
+            </ul>
+       </header>
+        <!-- 头部结束 -->
+        <!-- 主体内容开始 -->
+        <div class="main release m-top m-bottom fs28">
+            <ul class="white-bg fs28">
+                <li>选择</li>
+                <li class="choose">
+                    <div>
+                        <!-- <input class="btn active" href="###">群二维码</a>
+                        <a class="btn" href="###">个人二维码</a></div> -->
+                        <input class="status btn active" type="text" readonly name="" value="群二维码">
+                        <input class="status btn" type="text" readonly name="" value="个人二维码">
+                        <div>
+                        <div class="radio">
+                           <input id="radio-1" name="radio" type="radio" checked><label for="radio-1"></label><span>微信</span>
+                        </div>
+                        <div class="radio">
+                           <input id="radio-2" name="radio" type="radio"><label for="radio-2"></label><span>QQ</span>
+                        </div>
+
+
+                </li>
+            </ul>
+            <ul class="white-bg fs28">
+                <li>上传</li>
+                <li class="upload">
+                    <p class="UploadImgs"><input name="UploadImgs" type="file" multiple accept="image/*" /><img /></p>
+                    <a class="ewm" href="###">如何获取二维码？</span>
+                </li>
+            </ul>
+           <!--  <ul class="white-bg fs28">
+                <li>地域</li>
+                <li class="region">
+                    <a class="btn active" href="###">省</a>
+                    <a class="btn" href="###">市</a>
+                </li>
+            </ul> -->
+            <ul class="white-bg fs28">
+                <li>标题</li>
+                <li class="title">
+                    <textarea placeholder="名片标题   5-15个字" cols="30"  rows="1"></textarea>
+                </li>
+            </ul>
+            <ul class="white-bg fs28">
+                <li>描述</li>
+                <li class="describe">
+                    <textarea placeholder="名片描述   50-200字" cols="30"  rows="3"></textarea>
+                </li>
+            </ul>
+            <div class="notice">
+                <p class="p1">
+                当前积分&nbsp;<span>90.00</span>&nbsp;&nbsp;&nbsp;发布名片扣除<span>2</span>积分<br/>
+                <span style="color: red;">VIP</span>用户发布名片不消耗积分，<a href="###">点击开通</a>
+                </p>
+                <p class="p2">发布名片须知:<br/>
+                1.群二维码只有7天限期，过期需要重新发布。<br/>
+                2.若发现违法违规内容，我们将依据记录交给公安机关处理。<br/>
+                3.发布即表示同意<span style="color:#2268b3;">《悦帮小哥服务协议》</span>
+                </p>
+            </div>
+
+            <div class="releaseBtn white-bg">
+                <a class="btn" href="###">确认发布</a>
+            </div>
+        </div>
+        <!-- 主体内容结束 -->
+        <!-- 底部开始 -->
+        <footer class="footer">
+            <ul>
+                <li>
+                    <a href="###">
+                        <img src="img/f-1.png">
+                        <p class="name fs20">首页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <img src="img/f-2.png">
+                        <p class="name fs20">商友圈</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <img src="img/f-3.png">
+                        <p class="name fs20">优批推荐</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <img src="img/f-4.png">
+                        <p class="name fs20">购物车</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <img src="img/f-5.png">
+                        <p class="name fs20">会员中心</p>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        <!-- 底部结束 -->
+    </div>
+    <!-- 主体结束 -->
+    <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../../common/js/public.min.js"></script>
+    <script type="text/javascript" src="../../common/js/app.min.js"></script>
+    <script>
+  $(function(){
+
+  var current = $(null)
+      $('input:file').on('click',function(e){
+        e.stopPropagation()
+        current = $(this).parent('p')
+      })
+
+      $('.upload').on('click','.lazyUpload',function(){
+        current = $(this)
+//        console.log(current)
+        $(this).find('input').trigger('click')
+      })
+
+
+      $('input:file').localResizeIMG({
+        //不处理width时,保留原图尺寸
+//             width: 400,
+             quality: 0.5,
+
+             success: function (result) {
+
+             var image = new Image();
+
+             image.src = result.base64;
+
+               //$('.lazyUpload img') 是用户确认时需要上传到服务器的图片
+
+                 current.addClass('lazyUpload').find('img').replaceWith(image)
+                 //图片尺寸重调
+               img('.upload',current)
+             }
+         })
+        //直接上传该字符串格式的图片,在后台如需转回图片格式,参http://www.cnblogs.com/coco1s/p/4375774.html  --解码部分
+
+  })
+
+  </script>
+</body>
+</html>

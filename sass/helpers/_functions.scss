@@ -54,25 +54,25 @@
  * ptb上下、pfr左右
  */
 @for $i from 1 to 21{
-    .pt#{$i * 5}{margin-top:5rem *$i / 64};
+    .pt#{$i * 5}{padding-top:5rem *$i / 64};
 }
 @for $i from 1 to 21{
-    .pr#{$i * 5}{margin-top:5rem *$i / 64};
+    .pr#{$i * 5}{padding-top:5rem *$i / 64};
 }
 @for $i from 1 to 21{
-    .pb#{$i * 5}{margin-top:5rem *$i / 64};
+    .pb#{$i * 5}{padding-top:5rem *$i / 64};
 }
 @for $i from 1 to 21{
-    .pf#{$i * 5}{margin-top:5rem *$i / 64};
+    .pf#{$i * 5}{padding-top:5rem *$i / 64};
 }
 @for $i from 1 to 12{
-    .ptb#{$i * 5}{margin:5rem *$i / 64 0};
+    .ptb#{$i * 5}{padding:5rem *$i / 64 0};
 }
 @for $i from 1 to 12{
-    .pfr#{$i * 5}{margin:0 5rem *$i / 64};
+    .pfr#{$i * 5}{padding:0 5rem *$i / 64};
 }
 @for $i from 1 to 12{
-    .ptrbf#{$i * 5}{margin:5rem *$i / 64};
+    .ptrbf#{$i * 5}{padding:5rem *$i / 64};
 }
 /**
  * 自定义行高

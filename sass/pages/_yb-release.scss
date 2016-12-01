@@ -1,0 +1,89 @@
+.release{
+    font-family:"微软雅黑";
+    box-border:box-sizing;
+    ul{
+        display:-webkit-box;
+        padding:px2rem(20) px2rem(50);
+        border-bottom:1px solid #ccc;
+        li{
+            margin-right:px2rem(20);
+        }
+        li:first-child{
+            display:-webkit-box;
+            -webkit-box-align:center;
+            border-right:1px solid #ccc;
+            padding-right:px2rem(20);
+        }
+        .choose{
+            .status{
+                width:px2rem(140);
+            }
+            .btn{
+                padding:px2rem(15) px2rem(25);
+                @include border-radius(5px);
+                margin-bottom:px2rem(20);
+                border:1px solid nth($color,1);
+                margin-right:px2rem(30);
+            }
+            .btn.active{
+                color:white;
+                background-color:nth($color,1);
+            }
+        }
+        .radio{
+           display:inline-block;
+           span{
+                display:inline-block;
+                @include transform(translateY(-5px))
+           }
+        }
+        .upload{
+            .ewm{
+                display:inline-block;
+                @include transform(translate(10px,-40px));
+                color:nth($color,3);
+            }
+        }
+        .region{
+            a{
+                padding:px2rem(15) px2rem(50);
+                @include border-radius(5px);
+                border:1px solid nth($color,1);
+                margin-right:px2rem(30);
+
+            }
+            a.active{
+                color:white;
+                background-color:nth($color,1);
+            }
+        }
+        textarea{
+            overflow:hidden;
+        }
+    }
+    .notice{
+        background-color:white;
+        padding:px2rem(20) px2rem(50);
+        .p1{
+            line-height:px2rem(50);
+            span,a{
+                color:nth($color,3);
+            }
+        }
+        .p2{
+            margin-top:px2rem(20);
+        }
+    }
+    .releaseBtn{
+        width:100%;
+        a{
+            width:94%;
+            margin-left:3%;
+            color:white;
+            background-color:nth($color,1);
+            padding:px2rem(25) 0;
+            @include border-radius(5px);
+            border:1px solid nth($color,1);
+        }
+    }
+}

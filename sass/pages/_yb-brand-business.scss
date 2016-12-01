@@ -1,0 +1,151 @@
+/**
+ * 品牌商
+ */
+.m-tab{
+    margin-top:px2rem(142);
+}
+    .tab{
+        position:fixed;
+        top:px2rem(72);
+        left:0;
+        width:100%;
+        background-color:#fff;
+        font-size:0;
+        z-index:30;
+        li{
+            display:inline-block;
+            width:33%;
+            height:px2rem(60);
+            line-height:px2rem(60);
+            text-align:center;
+            color:#666;
+        }
+        li:not(:last-child){
+            border-right:1px solid #ccc;
+        }
+        .cur-tab{
+            display:inline-block;
+            widows: 55%;
+            border-bottom:1px solid nth($color,1);
+            color:nth($color,1);
+        }
+    }
+.brand{
+    .page{
+        .content{
+            padding:px2rem(20);
+            background-color:#fff;
+        }
+        .title{
+            position:relative;
+            border-bottom:1px solid #ccc;
+            padding-bottom:px2rem(20);
+            img{
+                width:px2rem(100);
+                height:px2rem(100);
+                vertical-align:middle;
+            }
+            .pin-name,.dai-name{
+                position:absolute;
+                top:3px;
+            }
+            .pin-name:before,.dai-name:before{
+
+                display:inline-block;
+                width:px2rem(45);
+                height:px2rem(45);
+                line-height:px2rem(45);
+
+                margin-left:10px;
+                font-size:20px;
+                text-align:center;
+                color:#fff;
+                @include border-radius(4px);
+            }
+            .pin-name:before{
+                content:'品';
+                background-color:nth($color,2);
+            }
+            .dai-name:before{
+                content:'代';
+                background-color:nth($color,5);
+            }
+            .star{
+                margin-top:px2rem(20);
+                img{
+                    width:px2rem(40);
+                    height:px2rem(40);
+                    margin-left:px2rem(-20);
+                }
+            }
+            .s-brand{
+                position:absolute;
+                top:60%;
+                left:20%;
+                color:#666;
+            }
+        }
+        .my-gallery{
+            width:100%;
+            font-size:0;
+            figure{
+                display:inline-block;
+                padding:px2rem(20) 0;
+            }
+            figure:not(:first-child){
+                margin-left:px2rem(22);
+            }
+            img{
+                width:px2rem(185);
+                height:px2rem(185);
+            }
+        }
+        .msg{
+             .info:before,.zan:before{
+                content:'';
+                display:inline-block;
+                width:px2rem(50);
+                height:px2rem(50);
+                vertical-align:middle;
+                @include transform(translateY(-2px));
+            }
+            .time{
+                 display:inline-block;
+                 margin-left:10px;
+            }
+            .info:before{
+                background:url(../yuebang/img/msg.png) no-repeat;
+                background-size:px2rem(50) px2rem(50);
+            }
+            .zan:before{
+                background:url(../yuebang/img/zan.png) no-repeat;
+                background-size:px2rem(50) px2rem(50);
+            }
+        }
+    }
+    .paging{
+        background-color:#fff;
+        padding:px2rem(40) px2rem(20);
+        font-size:0;
+        .page-item{
+            display:inline-block;
+            width:33.33%;
+            .btn{
+                padding:px2rem(10) px2rem(20);
+                text-align:center;
+                border:1px solid #ccc;
+                @include border-radius(6px);
+            }
+        }
+        .page-item:first-child .btn:before{
+            content:'<';
+            display:inline-block;
+            @include transform(translateX(-3px))
+        }
+        .page-item:last-child .btn:after{
+            content:'>';
+            display:inline-block;
+            @include transform(translateX(3px))
+        }
+    }
+}

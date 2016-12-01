@@ -1,0 +1,71 @@
+.rank{
+    font-family:"微软雅黑";
+    .title{
+        padding:px2rem(30) px2rem(20);
+        p{
+            width:90%;
+            span{
+                color:nth($color,3);
+            }
+        }
+        .ahead{
+            float:right;
+            font-family:"宋体";
+            margin-top:px2rem(15);
+        }
+    }
+    .ranklist{
+        width:100%;
+        .rankitem{
+            display:-webkit-box;
+            padding:0 px2rem(20);
+            border-bottom:1px solid #ccc;
+            li{
+                position:relative;
+                height:px2rem(140);
+                display:-webkit-box;
+                //-webkit-box-pack:center;
+                -webkit-box-align:center;
+                -webkit-box-flex:1;
+                .num{
+                    color:nth($color,6);
+                }
+                .headImg{
+                    width:px2rem(100);
+                    height:px2rem(100);
+                    img{
+                        width:100%;
+                        height:100%;
+                        @include border-radius(45px);
+                    }
+                }
+                .name{
+                }
+                .add{
+                    width:px2rem(105);
+                    height:px2rem(45);
+                    background-color:nth($color,1);
+                    @include border-radius(5px);
+                    color:nth($color,7);
+                    padding-top:px2rem(15);
+                }
+                .addnum{
+                    color:nth($color,3);
+                }
+            }
+            li:nth-child(1){
+                -webkit-box-flex:1;
+            }
+            li:nth-child(2){
+                -webkit-box-flex:1;
+            }
+            li:nth-child(3){
+                -webkit-box-flex:10;
+                -webkit-box-pack:start;
+            }
+            li:nth-child(4){
+                -webkit-box-pack:end;
+            }
+        }
+    }
+}

@@ -16,4 +16,16 @@ function banner(className) {
             autoplayDisableOnInteraction: true
         });
 }
+//@koala-prepend '../yuebang/yb_brand_business.js'
+//@koala-prepend '../yuebang/yb_business-friend.js'
+//@koala-prepend 'photoswipe.js'
+//@koala-prepend 'upload.js'
+/**
+ * VIP
+ */
+//@koala-prepend '../yuebang/yb_vip.js'
+//@koala-prepend '../yuebang/yb_release.js'
+//@koala-prepend '../yuebang/yb_brand_business.js'
+//@koala-prepend '../yuebang/yb_brand_business.js'
+
 

@@ -1,0 +1,82 @@
+/**
+ * 自定义宽度
+ */
+@for $i from 1 to 21{
+    .w#{$i * 5}{width:5% * $i};
+}
+/**
+ *自定义列数(最多12列)
+ */
+@for $i from 1 to 13{
+    .col-#{$i}{width:100% / $i};
+}
+/**
+ * 自定义字体大小
+ */
+@for $i from 6 to 22{
+    .fs#{$i * 2}{font-size:$i * 2px}
+}
+/**
+ * 自定义外边距
+ * mt上、mr右、mb下、 mf左、
+ * mtb上下、mfr左右
+ */
+@for $i from 1 to 21{
+    .mt#{$i * 5}{margin-top:5px *$i};
+}
+@for $i from 1 to 21{
+    .mr#{$i * 5}{margin-right:5px *$i};
+}
+@for $i from 1 to 21{
+    .mb#{$i * 5}{margin-bottom:5px *$i};
+}
+@for $i from 1 to 21{
+    .mf#{$i * 5}{margin-left:5px *$i};
+}
+@for $i from 1 to 12{
+    .mtb#{$i * 5}{margin:5px *$i 0};
+}
+@for $i from 1 to 12{
+    .mfr#{$i * 5}{margin:0 5px *$i};
+}
+@for $i from 1 to 12{
+    .mtrbf#{$i * 5}{margin:5px *$i};
+}
+/**
+ * 自定义内边距
+ * pt上、pr右、pb下、 pf左、
+ * ptb上下、pfr左右
+ */
+@for $i from 1 to 21{
+    .pt#{$i * 5}{padding-top:5px *$i};
+}
+@for $i from 1 to 21{
+    .pr#{$i * 5}{padding-right:5px *$i};
+}
+@for $i from 1 to 21{
+    .pb#{$i * 5}{padding-bottom:5px *$i};
+}
+@for $i from 1 to 21{
+    .pf#{$i * 5}{padding-left:5px *$i};
+}
+@for $i from 1 to 12{
+    .ptb#{$i * 5}{padding:5px *$i 0};
+}
+@for $i from 1 to 12{
+    .pfr#{$i * 5}{padding:0 5px *$i};
+}
+@for $i from 1 to 12{
+    .ptrbf#{$i * 5}{padding:5px *$i};
+}
+/**
+ * 自定义行高
+ */
+@for $i from 1 to 15{
+    .lh#{$i * 5}{line-height:5px *$i};
+}
+/**
+ * 自定义层级
+ */
+@for $i from 1 to 31{
+    .z#{$i}{z-index:$i};
+}
