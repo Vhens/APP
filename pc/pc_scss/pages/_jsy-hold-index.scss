@@ -1,6 +1,12 @@
 /**
  * 控股首页
  */
+ .sepia{
+          -webkit-filter:sepia(.8);
+          &:hover{
+             -webkit-filter:none;
+          }
+      }
 .hold-right{
     margin-right:150px !important;
 }
@@ -18,6 +24,15 @@
           font-size:0;
           vertical-align:middle;
         cursor:pointer;
+        &:hover .nav-title{
+            color:#fff;
+        }
+        &:hover .sub-nav-hold{
+            display:block;
+        }
+        &:hover .nav-bg{
+             background-color:red;
+        }
           .nav-title,.nav-title1{
             display:inline-block;
             position:absolute;
@@ -81,7 +96,7 @@
             overflow:hidden;
             // transform:rotate(-30deg);
             @include transform(skew(-18deg) rotateY(-60deg) translateX(-90px));
-            @include box-shadow(16px 0 4px #cdd5d8,0 -2px 2px #ccc inset);
+            @include box-shadow(12px 0 2px rgba(0,0,0,.5),0 -2px 2px #ccc inset);
             background-color:#fff;
         }
         .sub-name{
@@ -124,6 +139,9 @@
  */
     .more-img{
         .img-item{
+            &:hover{
+                color:red;
+            }
             position: relative;
             display:inline-block;
             width:300px;
@@ -265,11 +283,14 @@
     }
     .side-item{
         position: relative;
+        &:hover{
+            color:red;
+        }
          &:after{
             content:'';
             display:inline-block;
             position: absolute;
-            bottom:31px;
+            bottom:35px;
             right:5px;
             width:80px;
             height:60px;
@@ -295,5 +316,17 @@
     .swiper-slide-duplicate{
         width:200px !important;
         margin-left:10px;
+    }
+}
+.small-swiper{
+    height:300px !important;
+    .hold-more:before{
+        top:85%;
+    }
+    .hold-more:after{
+        top:90%;
+    }
+    .hold-prev,.hold-next{
+        margin-top:5%;
     }
 }
