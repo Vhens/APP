@@ -38,9 +38,6 @@
         width:72%;
         float:left;
         margin-left:6%;
-        span{
-            color:#E60012;
-        }
     }
 
 }
@@ -49,9 +46,20 @@
     // 右边内容
     .caseInfo{
         margin-top:40px;
+        overflow:hidden;
+        // background-color:#ededed;
+        // padding:20px;\
         ul{
+            margin-left:5px;
             border-bottom:1px solid black;
             li{
+                a{
+                    &:hover{
+                        color:red;
+                    }
+                    color:#666;
+                    margin-left:0;
+                }
                 margin-right:4.5%;
                 margin-bottom:20px;
                 display:inline-block;

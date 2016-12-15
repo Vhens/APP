@@ -18,7 +18,7 @@
             <ul>
                 <li class="top-item w10"><img src="img/category.png" alt=""></li>
                 <li class="top-item w20"><img src="img/logo.png" alt=""></li>
-                <li class="top-item w60"><input type="search"></li>
+                <li class="top-item w60"><input type="text" placeholder="搜索关键词" class="w80 fs24"></li>
                 <li class="top-item"><img src="img/info.png" alt=""></li>
             </ul>
        </header>
@@ -29,16 +29,16 @@
                 <li>选择</li>
                 <li class="choose">
                     <div>
-                        <a class="btn active" href="###">群二维码</a>
-                        <a class="btn" href="###">个人二维码</a></div>
+                        <!-- <input class="btn active" href="###">群二维码</a>
+                        <a class="btn" href="###">个人二维码</a></div> -->
+                        <input class="status btn active" type="text" readonly name="" value="群二维码">
+                        <input class="status btn" type="text" readonly name="" value="个人二维码">
                         <div>
-                        <div class="radio dib">
-                            <label class="on" for="wx"><span class="on">√</span></label>
-                            <input type="radio" checked="checked" value="微信" id="wx" name=""/>微信
+                        <div class="radio">
+                           <input id="radio-1" name="radio" type="radio" checked><label for="radio-1"></label><span>微信</span>
                         </div>
-                        <div class="radio dib">
-                            <label for="qq"><span class="off">√</span></label>
-                            <input type="radio" value="QQ" name="" id="qq" />QQ
+                        <div class="radio">
+                           <input id="radio-2" name="radio" type="radio"><label for="radio-2"></label><span>QQ</span>
                         </div>
 
 
@@ -47,17 +47,17 @@
             <ul class="white-bg fs28">
                 <li>上传</li>
                 <li class="upload">
-                    <a class="btn" href="###">点击上传</a>
-                    <span>如何获取二维码？</span>
+                    <p class="UploadImgs"><input name="UploadImgs" type="file" multiple accept="image/*" /><img /></p>
+                    <a class="ewm" href="###">如何获取二维码？</span>
                 </li>
             </ul>
-            <ul class="white-bg fs28">
+           <!--  <ul class="white-bg fs28">
                 <li>地域</li>
                 <li class="region">
                     <a class="btn active" href="###">省</a>
                     <a class="btn" href="###">市</a>
                 </li>
-            </ul>
+            </ul> -->
             <ul class="white-bg fs28">
                 <li>标题</li>
                 <li class="title">
@@ -128,6 +128,44 @@
     <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="../../common/js/public.min.js"></script>
     <script type="text/javascript" src="../../common/js/app.min.js"></script>
-    <script src="http://cdn.bootcss.com/Swiper/3.4.0/js/swiper.min.js"></script>
+    <script>
+  $(function(){
+
+  var current = $(null)
+      $('input:file').on('click',function(e){
+        e.stopPropagation()
+        current = $(this).parent('p')
+      })
+
+      $('.upload').on('click','.lazyUpload',function(){
+        current = $(this)
+//        console.log(current)
+        $(this).find('input').trigger('click')
+      })
+
+
+      $('input:file').localResizeIMG({
+        //不处理width时,保留原图尺寸
+//             width: 400,
+             quality: 0.5,
+
+             success: function (result) {
+
+             var image = new Image();
+
+             image.src = result.base64;
+
+               //$('.lazyUpload img') 是用户确认时需要上传到服务器的图片
+
+                 current.addClass('lazyUpload').find('img').replaceWith(image)
+                 //图片尺寸重调
+               img('.upload',current)
+             }
+         })
+        //直接上传该字符串格式的图片,在后台如需转回图片格式,参http://www.cnblogs.com/coco1s/p/4375774.html  --解码部分
+
+  })
+
+  </script>
 </body>
 </html>

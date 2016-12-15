@@ -1,7 +1,7 @@
 .product-content,.left-memu{
     font-family:"黑体";
     position:relative;
-    // min-width:900px;
+    min-width:1000px;
     padding:80px 8%;
     width:84%;
     box-border:box-sizing;
@@ -43,6 +43,9 @@
                 a{
                     color:black;
                 }
+                a:hover{
+                    color:red;
+                }
             }
             // li.active{
             //     a{
@@ -51,9 +54,9 @@
             // }
             img{
                 width:15px;
-                height:3px;
+                height:12px;
                 vertical-align:middle;
-                margin-top: -19px;
+                margin-top: -5px;
             }
         }
     }
@@ -73,12 +76,14 @@
     // 右边内容
     .productInfo{
         margin-top:40px;
+        // background-color:#ededed;
+        // padding:20px;
         ul{
             li{
-                margin-right:4.5%;
+                margin-right:3.5%;
                 margin-bottom:20px;
                 display:inline-block;
-                width:29%;
+                width:30%;
                 height:230px;
                 .img1{
                     width:100%;
@@ -89,7 +94,7 @@
                     height:20px;
                     vertical-align:middle;
                 }
-                p.active{
+                &:hover{
                     color:#E60012;
                 }
             }

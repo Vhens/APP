@@ -4,7 +4,7 @@
         padding:25px 50px;
         background-color:#ededed;
         margin-top:40px;
-
+         overflow:hidden;
         .headImg{
             width:20px;
             height:25px;
@@ -17,6 +17,9 @@
         .head{
             margin-left:10px;
             vertical-align:text-top;
+        }
+        p{
+              overflow: hidden;
         }
         .img{
             height:350px;

@@ -1,6 +1,10 @@
 /**
  * 头部
  */
+body{
+    background-color:#fff !important;
+    font-family:'微软雅黑';
+}
 .container{
     width:100%;
     // min-width:1420px;
@@ -10,7 +14,7 @@
     width:100%;
     font-size:0;
     z-index:20;
-    min-width:1000px;
+    min-width:1420px;
     .item{
         display:inline-block;
         width:50%;
@@ -59,7 +63,7 @@
         width:100%;
         height:60px;
         line-height:60px;
-        background-color:#f6f6f6;
+        background-color:rgba(237, 237, 237, 0.23);
         -webkit-box-shadow: 0 -2px 2px #ccc inset;
         -moz-box-shadow: 0 -2px 2px #ccc inset;
         -ms-box-shadow: 0 -2px 2px #ccc inset;
@@ -71,6 +75,13 @@
         .nav-memu-item{
              display:inline-block;
              vertical-align:top;
+                &:hover>a{
+                border-bottom:2px solid red;
+                color:red;
+             }
+                &:hover>.nav-memu-page{
+               display:block;
+             }
             a{
                 display:inline-block;
                 width:120px;
@@ -106,22 +117,35 @@
     .product-item{
         position:absolute;
         top:65px;
-        left:-300px;
-        width:800px;
+        left:-400px;
+        width:1100px;
+    }
+    .sub-item:last-child{
+        width:95%;
+        margin-top:40px;
+        margin-left:20px;
+        border-top:1px dotted #ccc;
+        padding-top:20px;
     }
     .sub-item{
+
         font-size:0;
         .content{
             display:inline-block;
-            width:20%;
+            width:16.66667%;
             text-align:center;
+            vertical-align:top;
             .content-title{
                 font-size:14px;
             }
             li{
                 height:30px;
+
             }
             a{
+                display:inline-block;
+                width:100%;
+                height:100%;
                 font-size:12px;
                 font-weight:normal;
                 color:#666;
@@ -131,23 +155,23 @@
             }
         }
         .pic{
-            padding:0 25px;
+            // padding:0 25px;
             display:inline-block;
-            width:10%;
+            width:16.66667%;
             text-align:center;
             li{
                 font-size:12px;
+                 text-align:center;
             }
             li:last-child{
-                margin-left:15px;
                 margin-top:-30px;
             }
             li:last-child:hover{
                 color:red;
             }
             img{
-                width:100px;
-                height:100px;
+                width:120px;
+                height:120px;
             }
         }
     }
@@ -225,26 +249,39 @@
 }
 .banner{
      position:relative;
+     height:220px;
+      // min-width:900px;
      .title{
-        margin-bottom:130px;
+        margin-bottom:60px;
      }
 }
 .swiper-container1{
-    width:90%;
+    width:60%;
+    min-width:950px;
     margin:0 auto;
     overflow:hidden;
-    vertical-align:middle;
+    vertical-align:bottom;
      .swiper-slide{
         a{
             position:relative;
             display:inline-block;
-            width:100%;
+            width:90%;
             height:100%;
             .name{
                 position:absolute;
                 top:45%;
                 left:18%;
                 color:#fff;
+            }
+            &:hover{
+                .more{
+                    top:55%;
+                    left:39%;
+                }
+                .name{
+                    top:30%;
+                    left:27%;
+                }
             }
         }
         .more{
@@ -267,25 +304,31 @@
         }
         img{
            margin-top:15px;
+           width:140px;
         }
     }
     .swiper-button-prev{
         position:absolute;
-        top:240px;
-        left:0;
+        top:175px;
+        left:100px;
         background-image:url(../jsy/img/left.png);
+        background-size:20px 40px;
     }
     .swiper-button-next{
-        margin-top:80px;
+        margin-top:50px;
+        margin-right:100px;
         background-image:url(../jsy/img/right.png);
+        background-size:20px 40px;
     }
     .selectimg{
-        width:170px;
+        width:170px !important;
         height:80px;
         margin-top:0px !important;
     }
 }
 .footer{
+    background-color:#fff;
+    min-width:1400px;
     .line{
         width:100%;
     }
