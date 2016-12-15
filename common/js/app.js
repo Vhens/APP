@@ -19,6 +19,7 @@ function banner(className) {
 //@koala-prepend '../yuebang/yb_brand_business.js'
 //@koala-prepend '../yuebang/yb_business-friend.js'
 //@koala-prepend 'photoswipe.js'
+//@koala-prepend 'upload.js'
 /**
  * VIP
  */
