@@ -99,7 +99,7 @@
         background-color:nth($color,4);
     }
     .list{
-        width:31%;
+        width:48%;
         border:1px solid #ccc;
         margin-bottom:px2rem(20);
         @include border-radius(8px);
@@ -131,7 +131,7 @@
         }
 
     }
-    .list:not(:nth-child(3n+1)){
+    .list:not(:nth-child(2n+1)){
         margin-left:px2rem(20)
     }
 }
