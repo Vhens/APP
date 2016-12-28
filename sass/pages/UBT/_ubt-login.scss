@@ -9,8 +9,8 @@
     .content{
         width:100%;
         height:px2rem(300);
-        position:fixed;
-        bottom:px2rem(300);
+        position:absolute;
+        bottom:px2rem(250);
         z-index:2;
         text-align:center;
         input{
