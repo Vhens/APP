@@ -1,0 +1,19 @@
+.my-address{
+    li{
+        padding:px2rem(20) 0;
+        background-color:#fff;
+        margin-bottom:px2rem(20);
+        font-size:0;
+        .item{
+            display:inline-block;
+            vertical-align:middle;
+        }
+    }
+}
+.add-btn{
+    text-align:center;
+    .address-btn{
+        width:30%;
+        padding-top:px2rem(20);
+    }
+}

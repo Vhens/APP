@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+/**
+ * 基础样式
+ */
+>>>>>>> refs/remotes/origin/master
 @import 'base/normalize';
 @import 'helpers/variable';
 @import 'helpers/functions';
@@ -7,6 +13,7 @@
 @import 'base/base';
 @import 'components/btn';
 @import 'components/radio';
+<<<<<<< HEAD
 @import 'components/checkbox';
 @import 'components/upload';
 
@@ -26,3 +33,28 @@
 
 
 
+=======
+@import 'components/upload1';
+@import 'components/upload2';
+
+@import 'pages/UBT/_ubt-index.scss';
+@import 'pages/UBT/_ubt-shop.scss';
+@import 'pages/UBT/_ubt-shoplist.scss';
+@import 'pages/UBT/_ubt-category.scss';
+@import 'pages/UBT/_ubt-mygood.scss';
+@import 'pages/UBT/_ubt-mygood-list.scss';
+@import 'pages/UBT/_ubt-good-detail.scss';
+@import 'pages/UBT/_ubt-settlement.scss';
+@import 'pages/UBT/_ubt-register.scss';
+@import 'pages/UBT/_ubt-mystore.scss';
+@import 'pages/UBT/_ubt-search.scss';
+@import 'pages/UBT/_ubt-add-good.scss';
+@import 'pages/UBT/_ubt-seller-order.scss';
+@import 'pages/UBT/_ubt-my-address.scss';
+
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/notice';
+@import 'layout/nav';
+@import 'layout/tab';
+>>>>>>> refs/remotes/origin/master

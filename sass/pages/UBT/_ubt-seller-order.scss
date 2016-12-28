@@ -1,0 +1,27 @@
+ .seller-list{
+    margin-top:px2rem(170);
+    .content{
+        padding:0 px2rem(20);
+        background-color:#fff;
+        margin-bottom:px2rem(20);
+        font-size:0;
+        .order-no{
+           padding-top:px2rem(20);
+        }
+        .item{
+            display:inline-block;
+            padding-top:px2rem(20);
+            vertical-align:top;
+            img{
+                width:px2rem(170);
+                height:px2rem(180);
+            }
+            p{
+                padding:px2rem(5) 0;
+            }
+        }
+    }
+    // .page:not(:first-child){
+    //     display:none;
+    // }
+ }
