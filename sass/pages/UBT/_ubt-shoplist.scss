@@ -1,0 +1,76 @@
+.address-search{
+    position:fixed;
+    top:px2rem(85);
+    left:0;
+    z-index:10;
+    width:100%;
+    // height:px2rem(80);
+    text-align:center;
+    background-color:#efefef;
+    overflow:hidden;
+    p{
+        height:px2rem(80);
+        line-height:px2rem(40);
+        img{
+            vertical-align:middle;
+        }
+    }
+    .txt{
+        display:inline-block;
+        height:px2rem(80);
+        @include transform(translateY(5px))
+    }
+    .pop{
+        display:none;
+        background-color:#fff;
+        padding: px2rem(20) 0;
+        li{
+            height:px2rem(60);
+            line-height:px2rem(60);
+            padding:0 px2rem(20);
+        }
+        li:not(:last-child){
+            border-bottom:1px solid #ccc;
+        }
+    }
+}
+.shop-top{
+    background-color:#fff;
+    padding:px2rem(10) px2rem(20);
+    margin-top:px2rem(165);
+}
+/**
+ * 商家列表
+ */
+.shop-list{
+    font-size:0;
+    li:not(:last-child){
+        border-bottom:1px solid #ccc;
+    }
+    .shop-itme{
+          position:relative;
+        display:inline-block;
+        vertical-align:top;
+        padding:px2rem(10) 0;
+        img{
+            width:px2rem(150);
+            height:px2rem(150);
+
+        }
+        .brand{
+            color:#ccc;
+        }
+        p{
+            height:px2rem(40);
+        }
+        .contact{
+            position:absolute;
+            right:0;
+            bottom:px2rem(10);
+            padding:px2rem(10) px2rem(15);
+            background-color:#ee8416;
+            color:#fff;
+            @include border-radius(px2rem(10))
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.add-good{
+    .pic,.describe,.content{
+        width:100%;
+        padding:px2rem(20);
+        background-color:#fff;
+    }
+    .describe{
+         textarea{
+            width:100%;
+            height:px2rem(180);
+            color:#666;
+         }
+    }
+    .content{
+        li{
+            padding:px2rem(20);
+        }
+        li:not(:last-child){
+            border-bottom:1px solid #ccc;
+        }
+        input[type="text"]{
+            padding-left:px2rem(20);
+            color:#666;
+        }
+    }
+}
+/**
+ * 店铺装饰
+ */
+.butler{
+    padding:px2rem(20);
+    background-color:#fff;
+    vertical-align:middle;
+    img{
+        width:px2rem(112);
+        height:px2rem(67);
+    }
+    span{
+        @include transform(translateY(10px));
+    }
+}
+.add-logo{
+    height:px2rem(150);
+    background-color:#fff;
+}
+

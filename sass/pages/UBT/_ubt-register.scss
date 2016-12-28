@@ -1,0 +1,43 @@
+.reg-tab{
+    border:1px solid #ccc;
+    li:not(:last-child){
+        border-right:1px solid #ccc;
+    }
+}
+.reg{
+    margin-top:px2rem(170);
+    padding:px2rem(20);
+}
+.art1,.art2{
+    border:1px solid #ccc;
+    padding:px2rem(10) px2rem(20);
+    background-color:#fff;
+    @include border-radius(px2rem(20));
+}
+.art1,.art2{
+    width:100%;
+    li{
+        height:px2rem(80);
+        line-height:px2rem(80);
+    }
+    li:not(:last-child){
+        border-bottom:1px solid #ccc;
+    }
+    input[type="text"],input[type="password"]{
+        padding-left:px2rem(20);
+        color:#666;
+    }
+    select{
+         color:#666;
+    }
+}
+.code,.reg-btn,.buy-btn,.sure-btn,.sure-upload,.call-btn,.address-btn{
+    padding:px2rem(10) px2rem(20);
+    color:#fff;
+    background-color:#ee8416;
+    @include border-radius(px2rem(8));
+}
+.reg-btn,.buy-btn,.sure-btn,.sure-upload{
+    width:94%;
+    padding-top:px2rem(20);
+}
