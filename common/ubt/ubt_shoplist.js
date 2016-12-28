@@ -8,9 +8,9 @@
      */
     $('#search-btn').on('touchstart',function(){
        $('#pop').toggle(function(){
-            $(this).addClass('fadeIn');
+            $(this).addClass('fadeIn').stop(true);
        },function(){
-            $(this).addClass('fadeOut');
+            $(this).addClass('fadeOut').stop(true);
        });
     });
 }());
