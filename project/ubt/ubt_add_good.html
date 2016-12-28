@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>优百通商城</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/ubt.css">
+    <link href="http://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- 主体开始 -->
+<section class="container">
+   <!-- 头部开始 -->
+   <header class="header orange">
+        <ul>
+            <li class="top-item w25"><img class="mt15 back" src="img/back.png" alt=""></li>
+            <li class="top-item w60 fs32 tc white-txt">添加商品</li>
+            <li class="top-item"><a href="###" class="fs30 white-txt "><img class="mt15 point" src="img/point.png" alt="" /></a></li>
+        </ul>
+   </header>
+   <!-- 头部结束 -->
+   <!-- 主体内容开始 -->
+   <section class="main m-bottom ml">
+      <!-- 添加商品开始 -->
+      <section class="add-good">
+        <div class="pic upload">
+            <h3 class="mb20">添加图片</h3>
+            <p class="UploadImgs"><input name="UploadImgs" type="file" multiple accept="image/*" /><img /></p>
+        </div>
+        <!-- 商品描述开始 -->
+        <section class="describe mt20">
+          <textarea class="fs30" placeholder="请输入商品描述"></textarea>
+        </section>
+        <!-- 商品描述结束 -->
+        <section class="content mt20">
+          <ul>
+            <li><label class="fs30" for="">商品名称：</label><input class="fs28" type="text" /></li>
+            <li><label class="fs30" for="">商品价格：</label><input class="fs28" type="text" /></li>
+            <li><label class="fs30" for="">商品库存：</label><input class="fs28" type="text" /></li>
+          </ul>
+          <a class="fs30 btn sure-upload mt50" href="###">确认上传</a>
+        </section>
+      </section>
+      <!-- 添加商品结束 -->
+   </section>
+   <!-- 主体内容结束 -->
+   <!-- 底部开始 -->
+    <footer class="footer">
+            <ul>
+                <li>
+                    <a href="###">
+                        <img src="img/f-1.png">
+                        <p class="name fs20">首页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <img src="img/f-2.png">
+                        <p class="name fs20">商友圈</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <img src="img/f-3.png">
+                        <p class="name fs20">优批推荐</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <img src="img/f-4.png">
+                        <p class="name fs20">购物车</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <img src="img/f-5.png">
+                        <p class="name fs20">会员中心</p>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+   <!-- 底部结束 -->
+</section>
+<!-- 主体结束 -->
+
+    <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../../common/js/public.min.js"></script>
+    <script type="text/javascript" src="../../common/js/ubt.min.js"></script>
+     <script>
+  $(function(){
+
+  var current = $(null)
+      $('input:file').on('click',function(e){
+        e.stopPropagation()
+        current = $(this).parent('p')
+      })
+
+      $('.upload').on('click','.lazyUpload',function(){
+        current = $(this)
+//        console.log(current)
+        $(this).find('input').trigger('click')
+      })
+
+
+      $('input:file').localResizeIMG({
+        //不处理width时,保留原图尺寸
+//             width: 400,
+             quality: 0.5,
+
+             success: function (result) {
+
+             var image = new Image();
+
+             image.src = result.base64;
+
+               //$('.lazyUpload img') 是用户确认时需要上传到服务器的图片
+
+                 current.addClass('lazyUpload').find('img').replaceWith(image)
+                 //图片尺寸重调
+               img('.upload',current)
+             }
+         })
+        //直接上传该字符串格式的图片,在后台如需转回图片格式,参http://www.cnblogs.com/coco1s/p/4375774.html  --解码部分
+
+  })
+
+  </script>
+</body>
+</html>

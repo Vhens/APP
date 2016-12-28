@@ -22,7 +22,7 @@
     .top-item:nth-child(1) {
         font-size:30px;
         color:#fff;
-        vertical-align:middle;
+        vertical-align:baseline;
     }
     .top-item:nth-child(1) img{
         width:px2rem(54);
@@ -38,7 +38,7 @@
         background-size:px2rem(40) px2rem(40);
         background-position:4px 4px;
         background-color:#fff;
-        vertical-align:middle;
+        vertical-align:baseline;
         @include border-radius(4px);
     }
     .search input{

@@ -31,13 +31,13 @@
     .mt#{$i * 5}{margin-top:5rem *$i / 64};
 }
 @for $i from 1 to 21{
-    .mr#{$i * 5}{margin-top:5rem *$i / 64};
+    .mr#{$i * 5}{margin-right:5rem *$i / 64};
 }
 @for $i from 1 to 21{
-    .mb#{$i * 5}{margin-top:5rem *$i / 64};
+    .mb#{$i * 5}{margin-bottom:5rem *$i / 64};
 }
 @for $i from 1 to 21{
-    .mf#{$i * 5}{margin-top:5rem *$i / 64};
+    .mf#{$i * 5}{margin-left:5rem *$i / 64};
 }
 @for $i from 1 to 12{
     .mtb#{$i * 5}{margin:5rem *$i / 64 0};
@@ -57,13 +57,13 @@
     .pt#{$i * 5}{padding-top:5rem *$i / 64};
 }
 @for $i from 1 to 21{
-    .pr#{$i * 5}{padding-top:5rem *$i / 64};
+    .pr#{$i * 5}{padding-right:5rem *$i / 64};
 }
 @for $i from 1 to 21{
-    .pb#{$i * 5}{padding-top:5rem *$i / 64};
+    .pb#{$i * 5}{padding-bottom:5rem *$i / 64};
 }
 @for $i from 1 to 21{
-    .pf#{$i * 5}{padding-top:5rem *$i / 64};
+    .pf#{$i * 5}{padding-left:5rem *$i / 64};
 }
 @for $i from 1 to 12{
     .ptb#{$i * 5}{padding:5rem *$i / 64 0};

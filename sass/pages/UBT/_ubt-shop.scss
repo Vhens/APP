@@ -1,0 +1,123 @@
+.header{
+    .top-item{
+    }
+    .back{
+        width:px2rem(124) !important;
+        height:px2rem(51) !important;
+    }
+    .point{
+        width:px2rem(86) !important;
+        height:px2rem(44) !important;
+    }
+}
+.shopA{
+    position:relative;
+    width:100%;
+    height:px2rem(110);
+    background-color:#efefef;
+    font-size:0;
+    border-bottom:1px solid #ccc;
+    .shop-logo{
+        position:absolute;
+        top:px2rem(-75);
+        left:px2rem(35);
+        width:px2rem(150);
+        height:px2rem(150);
+        z-index:10;
+        @include border-radius(75px);
+    }
+    .item{
+        height:px2rem(150);
+        display:inline-block;
+        overflow:hidden;
+        .name{
+            width:50%;
+            height:px2rem(60);
+            margin-left:60%;
+            margin-top:px2rem(20);
+        }
+        .brand{
+            width:50%;
+            margin-left:60%;
+            margin-top:px2rem(-20);
+            color:#ccc;
+        }
+        .gz{
+            width:px2rem(73);
+            height:px2rem(74);
+        }
+    }
+}
+/**
+ * 热卖
+ */
+.hot-selling,.promotion,.good-list{
+     background-color:#fff;
+     padding:px2rem(10) px2rem(20);
+     .yb-title{
+        display:inline-block;
+        padding: px2rem(20) 0;
+        width:100%;
+        border-bottom:1px solid #ccc;
+        span:after{
+            content:'更多 >>';
+            float:right;
+        }
+    }
+    .yb-title:before{
+        content:'';
+        display:inline-block;
+        width:px2rem(10);
+        height:px2rem(30);
+        vertical-align:top;
+        @include border-radius(15px);
+    }
+    ul{
+        font-size:0;
+    }
+    .list{
+        box-sizing:-webkit-border-box;
+        padding-bottom:px2rem(10);
+        display:inline-block;
+        text-align:center;
+    }
+      .yb-title:before{
+        background-color:nth($color,4);
+    }
+    .list{
+        width:48%;
+        border:1px solid #ccc;
+        margin-bottom:px2rem(20);
+        @include border-radius(8px);
+        img{
+            width:100%;
+            height:pxw2rem(270);
+        }
+        .name{
+            height:px2rem(70);
+            line-height:px2rem(35);
+            margin:px2rem(10) 0;
+        }
+        .buy{
+            height:px2rem(50);
+            line-height:px2rem(50);
+            border-top:2px dotted #ccc;
+            .price{
+                font-size:px2rem(14);
+                color:nth($color,3);
+            }
+            .btn{
+                margin-top:px2rem(10);
+                padding:px2rem(5) px2rem(20);
+                border:1px solid #ccc;
+                color:nth($color,1);
+                margin-right:px2rem(10);
+                @include border-radius(6px);
+            }
+        }
+
+    }
+    .list:nth-child(2n){
+        margin-left:px2rem(20)
+    }
+}
