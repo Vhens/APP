@@ -57,8 +57,5 @@
         var new_arr=$.grep(arr, function(n) {return $.trim(n).length > 0;});
         $('#order-val').val(new_arr)
     });
-<<<<<<< HEAD
 }());
-=======
-}());
->>>>>>> refs/remotes/origin/Vhen
+
