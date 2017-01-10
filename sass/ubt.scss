@@ -1,9 +1,7 @@
-<<<<<<< HEAD
-=======
+
 /**
  * 基础样式
  */
->>>>>>> refs/remotes/origin/master
 @import 'base/normalize';
 @import 'helpers/variable';
 @import 'helpers/functions';
@@ -13,14 +11,10 @@
 @import 'base/base';
 @import 'components/btn';
 @import 'components/radio';
-<<<<<<< HEAD
 @import 'components/checkbox';
 @import 'components/upload';
-
-
-@import 'pages/UBT/test';
 @import 'pages/UBT/ubt-usercenter';
-@import 'pages/UBT/ubt-order';
+// @import 'pages/UBT/ubt-order';
 @import 'pages/UBT/ubt-shoppingcar';
 @import 'pages/UBT/ubt-userinfo';
 @import 'pages/UBT/ubt-income';
@@ -30,10 +24,6 @@
 @import 'pages/UBT/ubt-address';
 @import 'pages/UBT/ubt-addAddress';
 @import 'pages/UBT/ubt-login';
-
-
-
-=======
 @import 'components/upload1';
 @import 'components/upload2';
 
@@ -57,4 +47,3 @@
 @import 'layout/notice';
 @import 'layout/nav';
 @import 'layout/tab';
->>>>>>> refs/remotes/origin/master

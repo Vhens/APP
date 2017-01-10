@@ -10,15 +10,9 @@ input[type='radio']+label{
     overflow:hidden;
     width:18px;
     height:18px;
-<<<<<<< HEAD
-
-    border:1px solid #ccc;
-    background-color:#CACACA;
-=======
     vertical-align:middle;
     border:1px solid #888;
     background-color:#fff;
->>>>>>> refs/remotes/origin/master
     margin-right:10px;
     cursor:pointer;
     @include border-radius(50%)

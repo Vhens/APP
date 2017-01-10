@@ -1,6 +1,7 @@
 .m-tab{
     margin-top:px2rem(142);
 }
+.main{
     .tab{
         position:fixed;
         top:px2rem(72);
@@ -27,6 +28,7 @@
             color:nth($color,3);
         }
     }
+}
 .order{
     .page{
         .content{
