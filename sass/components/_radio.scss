@@ -10,8 +10,8 @@ input[type='radio']+label{
     overflow:hidden;
     width:18px;
     height:18px;
-
-    border:1px solid #ccc;
+    vertical-align:middle;
+    border:1px solid #888;
     background-color:#fff;
     margin-right:10px;
     cursor:pointer;
@@ -21,23 +21,23 @@ input[type='radio']+label{
 input[type='radio']+label:after{
     content:'';
     position:absolute;
-    top:3px;
-    left:3px;
+    top:2px;
+    left:2px;
     width:12px;
     height:12px;
 
-    background-color:orange;
+    background-color:nth($color,3);
     @include border-radius(50%);
     @include transform(scale(0));
     @include transition(transform .2s ease-out)
 }
 
-input[type='radio']:checked+label{
+ input[type='radio']:checked+label{
     background-color:#fff;
     @include transition(background-color .2s ease-in)
 }
 input[type='radio']:checked+label:after{
-    background-color:orange;
+    background-color:nth($color,3);
     @include transform(scale(1));
-    @include transition(transform .2s ease-in)
+    @include transition(transform .2s ease-in);
 }

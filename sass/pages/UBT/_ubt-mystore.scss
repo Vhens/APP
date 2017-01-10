@@ -1,0 +1,40 @@
+.store{
+    .header-bg{
+        position:relative;
+        width:100%;
+        height:px2rem(350);
+        text-align:center;
+        background-color:#ee8416;
+    }
+    .content{
+        position:absolute;
+        top:25%;
+        left:38%;
+    }
+    .tx{
+        width:px2rem(150);
+        height:px2rem(150);
+        vertical-align:middle;
+        @include border-radius(px2rem(75))
+    }
+    .store-list{
+        display:-webkit-box;
+        display:-webkit-flex;
+        display:flex;
+        flex-flow:row wrap;
+        align-items: center;
+        li{
+            width:33.33%;
+            text-align:center;
+            padding:px2rem(20);
+            border-bottom:1px solid #ccc;
+            img{
+                width:px2rem(122);
+                height:px2rem(122);
+            }
+        }
+        li:not(:nth-child(3n)){
+            border-right:1px solid #ccc;
+        }
+    }
+}

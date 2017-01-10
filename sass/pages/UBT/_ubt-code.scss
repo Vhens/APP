@@ -1,0 +1,49 @@
+.code{
+    padding:px2rem(25) px2rem(25);
+    .title{
+        padding:px2rem(30) px2rem(30);
+        background-color:#EDECEC;
+        border:1px solid gray;
+        @include border-radius(5px);
+    }
+    .content{
+        border:1px solid gray;
+        @include border-radius(5px);
+        background-color:#EDECEC;
+        .headImg{
+            width:px2rem(100);
+            height:px2rem(100);
+            @include border-radius(45px);
+            margin:px2rem(30) px2rem(30);
+            margin-right:px2rem(10);
+            vertical-align:middle;
+        }
+        span{
+            padding:px2rem(15) 0;
+            background-color:#CACACA;
+            border-top:1px solid gray;
+            border-bottom:1px solid gray;
+        }
+        .codeImg{
+            margin-top:px2rem(50);
+            width:px2rem(480);
+            height:px2rem(480);
+            border:px2rem(25) solid #CACACA;
+        }
+    }
+    .btn{
+        margin-top:px2rem(200);
+        width:100%;
+        position:relative;
+    }
+    a{
+        position:absolute;
+        bottom:px2rem(20);
+        padding:px2rem(20) 0;
+        background-color:#EA5513;
+        color:white;
+        width:98%;
+        left:1%;
+        @include border-radius(5px);
+    }
+}

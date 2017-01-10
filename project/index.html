@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>迈卡俱乐部</title>
+    <link rel="stylesheet" type="text/css" href="/APP/project/stylesheets/mk.css">
+    <link href="http://cdn.bootcss.com/Swiper/3.4.0/css/swiper.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 主体开始 -->
+    <div class="container">
+        <!-- 头部开始 -->
+       <header class="header mk-header" id="header">
+            <ul>
+                <li class="top-item w20 fs24"><span class="mf10">福州</span> <span class="arrow"></span></li>
+                <li class="top-item w60"><input type="text" placeholder="搜索关键词" id="search" class="w80 fs24"><span class="submit" id="sub"></span></li>
+                <li class="top-item fs24"><a href="http://wx.ubaitong.com/ShopIndex.php/User/Indexnew/User_integral/shop_id/1485" class="white-txt"><img src="/APP/project/mk/img/mk_03.png" alt=""><span class="mf10">账单</span></a></li>
+            </ul>
+       </header>
+        <!-- 头部结束 -->
+
+        <!-- 主体内容开始 -->
+        <div class="main m-top m-bottom">
+            <!-- 轮播图开始 -->
+                <section id="banner">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                        <volist name="piclist" id="vo">
+                            <div class="swiper-slide"><img class="w100" src="http://weidian.benditom.com/img/shop/{$vo.slide_picture}"></div>
+                        </volist>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </section>
+            <!-- 轮播图结束 -->
+              <!-- 分类栏目开始 -->
+            <nav class="nav mk-nav">
+                <ul>
+                    <volist name="mainprograma" id="vo">
+                    <li class="sub-nav">
+                        <a href="{$vo.programa_url}">
+                            <img src="http://weidian.benditom.com/img/favicon/{$vo.programa_favicon}" alt="" />
+                            <p class="name fs22">{$vo.programa_name}</p>
+                            <if condition="$key eq 0"><p class="fs20 line-1 nav-name">手洗15元</p></if>
+                            <if condition="$key eq 1"><p class="fs20 line-1 nav-name">超值钜惠</p></if>
+                            <if condition="$key eq 2"><p class="fs20 line-1 nav-name">原装正品</p></if>
+                            <if condition="$key eq 3"><p class="fs20 line-1 nav-name">省钱省力</p></if>
+                        </a>
+                    </li>
+                    </volist>
+                </ul>
+            </nav>
+            <!-- 分类栏目结束 -->
+            <!-- 公告开始 -->
+            <section class="notice-horizontal">
+                <span class="title"><img src="/APP/project/mk/img/mk_22.png"></span>
+                <div class="notice">
+                    <ul class="UlSlide" id="UlSlide">
+                    <volist name="noticelist" id="vo">
+                        <li>
+                            <a class="fs20" href="#">
+                                {$vo.notice_content}
+                            </a>
+                        </li>
+                        </volist>
+                    </ul>
+                </div>
+            </section>
+            <!-- 公告结束 -->
+            <!-- 分类开始 -->
+            <section class="mk_category">
+                <ul class="category">
+                    <volist name="fourprograma" id="vo">
+                    <li><a href="{$vo.programa_url}"><img src="http://weidian.benditom.com/img/favicon/{$vo.programa_favicon}" alt="" /><p class="fs22">{$vo.programa_name}</p></a></li>
+                    </volist>
+                </ul>
+                <ul class="category1">
+                <volist name="loneprograma" id="vo">
+                    <li class="w25"><a href="{$vo.programa_url}"><img src="http://weidian.benditom.com/img/favicon/{$vo.programa_favicon}" alt="" /><p class="fs22">{$vo.programa_name}</p></a></li>
+                    </volist>
+                    <volist name="indexAdone" id="vo">
+                    <li class="w50"><a href="{$vo.url}"><img class="img" src="http://weidian.benditom.com/img/shop/{$vo.picture}" alt="" /></a></li>
+                    </volist>
+                    <volist name="roneprograma" id="vo">
+                    <li class="w25"><a href="{$vo.programa_url}"><img src="http://weidian.benditom.com/img/favicon/{$vo.programa_favicon}" alt="" /><p class="fs22">{$vo.programa_name}</p></a></li>
+                    </volist>
+                </ul>
+                <ul class="category">
+                   <volist name="lfourprograma" id="vo">
+                    <li class="w25"><a href="{$vo.programa_url}"><img src="http://weidian.benditom.com/img/favicon/{$vo.programa_favicon}" alt="" /><p class="fs22">{$vo.programa_name}</p></a></li>
+                    </volist>
+                </ul>
+                 <ul class="cate mt20">
+                 <volist name="indexAdtwo" id="vo">
+                    <li><a href="{$vo.url}"><img class="img" src="http://weidian.benditom.com/img/shop/{$vo.picture}" alt="" /></a></li>
+                    </volist>
+                </ul>
+            </section>
+            <!-- 分类结束 -->
+            <!-- 专区开始 -->
+            <section class="prefecture">
+                <volist name="topzone" id="vo">
+                 <a class="mk-title" href="{$vo['zone_url']}">
+                    <span class="fs24 fb mf20">{$vo['zone_name']}</span>
+                </a>
+                <div class="content">
+                <volist name="vo['ltopzonecontent']" id="v">
+                    <div class="item w40"><a href="{$v.content_url}"><img class="img-left" src="http://weidian.benditom.com/img/shopZone/{$v['content_picture']}" alt="" /></a></div>
+                    </volist>
+                    <div class="item w60">
+                     <volist name="vo['onetopzonecontent']" id="v">
+                        <div><a href="{$v.content_url}"><img class="img-top" src="http://weidian.benditom.com/img/shopZone/{$v['content_picture']}" alt="" /></a></div>
+                        </volist>
+                        <div class="img-bottom">
+                        <volist name="vo['bzonecontent']" id="v">
+                            <p><a href="{$v.content_url}"><img src="http://weidian.benditom.com/img/shopZone/{$v['content_picture']}" alt="" /></a></p>
+                        </volist>
+                        </div>
+                    </div>
+                </div>
+                </volist>
+            </section>
+            <!-- 专区结束 -->
+            <!-- 精品推荐开始 -->
+            <section class="yb-prefecture mt20">
+            <volist name="middlezone" id="vo">
+                <a class="yb-title" href="{$vo['zone_url']}">
+                    <span class="fs24 fb mf20">{$vo['zone_name']}</span>
+                </a>
+                <ul class="pt20">
+                <volist name="vo['zonecontent']" id="v">
+                    <li class="list"><a href="{$v.content_url}"><img src="http://weidian.benditom.com/img/shopZone/{$v['content_picture']}"></a></li>
+                   </volist>
+                </ul>
+                </volist>
+            </section>
+            <!-- 精品推荐结束 -->
+            <!-- 每日特卖开始 -->
+            <section class="mk-prefecture mt20">
+            <volist name="lastzone" id="vo">
+                <a class="yb-title" href="{$vo['zone_url']}">
+                    <span class="fs24 fb mf20">{$vo['zone_name']}</span>
+                </a>
+                <ul class="pt20">
+                <volist name="vo['lzonecontent']" id="v">
+                    <li class="list"><a href="{$v.content_url}"><img src="http://weidian.benditom.com/img/shopZone/{$v['content_picture']}"></a></li>
+                </volist>
+                </ul>
+                </volist>
+            </section>
+            <!-- 每日特卖结束 -->
+        </div>
+        <!-- 主体内容结束 -->
+        <!-- 底部开始 -->
+        <footer class="footer mk-footer">
+            <ul>
+            <volist name="foot" id="vo">
+                <li>
+                    <a href="{$vo.menu_url}">
+                        <img src="http://weidian.benditom.com/img/favicon/{$vo.menu_icon}">
+                        <p class="name fs20">{$vo.menu_name}</p>
+                    </a>
+                </li>
+                </volist>
+
+            </ul>
+        </footer>
+        <!-- 底部结束 -->
+    </div>
+    <!-- 主体结束 -->
+    <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/APP/common/js/public.min.js"></script>
+    <script type="text/javascript" src="/APP/common/js/mk.min.js"></script>
+    <script src="http://cdn.bootcss.com/Swiper/3.4.0/js/swiper.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            var search=$('#search');
+            var header=$('#header');
+            var footer=$('.footer');
+            var main=$('.main');
+            $('#sub').on('touchstart',function(){
+                var m_name=$('#search').val();
+                location.href="http://wx.ubaitong.com/ShopIndex.php/Home/ShopIndexnew/newmechanse_search/shop_id/{$shop_id}/m_name/"+m_name;
+            })
+            search.on('focus',function(){
+                header.css('position','static');
+                main.css('margin-top','0');
+                footer.hide();
+            });
+             search.on('blur',function(){
+                header.css('position','fixed');
+                main.css('margin-top','1.125rem');
+                footer.show();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.addAddress{
+    padding:px2rem(25) 0;
+    ul{
+        li{
+            border-top:1px solid gray;
+            display:-webkit-box;
+            padding:px2rem(20) px2rem(45);
+            -webkit-box-align:center;
+            background-color:#EDECEC;
+        }
+        li:last-child{
+            border-bottom:1px solid gray;
+        }
+        input{
+            height:px2rem(40);
+            background-color:#EDECEC;
+        }
+    }
+    .btndiv{
+        width:100%;
+        height:px2rem(550);
+        position:relative;
+        background-color:white;
+    }
+    a{
+        position:absolute;
+        bottom:px2rem(20);
+        padding:px2rem(20) 0;
+        background-color:#EA5513;
+        color:white;
+        width:45.5%;
+        left:3%;
+        @include border-radius(5px);
+    }
+    a:last-child{
+        left:51.5%;
+        background-color:#A0A0A0;
+    }
+}

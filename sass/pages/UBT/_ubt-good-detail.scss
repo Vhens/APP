@@ -1,0 +1,136 @@
+.detail-tab{
+    border-style:solid;
+    border-color:#ccc;
+    border-width:1px 0 1px 0;
+    li:not(:last-child){
+        border-right:1px solid #ccc;
+    }
+}
+.good-detail{
+    .title{
+        padding:px2rem(20);
+        background-color:#fff;
+        border-bottom:1px solid #ccc;
+        li{
+            padding:px2rem(20) 0;
+        }
+        li:not(:last-child){
+            border-bottom:1px solid #ccc;
+        }
+    }
+    .content{
+        .page{
+            width:100%;
+            padding:px2rem(20);
+        }
+        .page:nth-child(3),.page:nth-child(4){
+            display:none;
+        }
+    }
+}
+.order-down{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:30;
+    display:none;
+    width:100%;
+    background-color:rgba(0,0,0,.8);
+    .bg{
+        position:absolute;
+        top:10%;
+        left:0;
+        width:100%;
+        padding:px2rem(20);
+        background-color:#fff;
+        >h3{
+            padding:px2rem(20);
+            border-bottom:1px solid #ccc;
+        }
+    }
+    .color,.size{
+        border-bottom:1px solid #ccc;
+        margin-bottom:px2rem(20);
+        ul{
+            display:-webkit-box;
+            display:-webkit-flex;
+            display:flex;
+            flex-flow:row wrap;
+        }
+        li{
+            text-align:center;
+            margin-bottom:px2rem(35);
+            a{
+                padding:px2rem(8) px2rem(30);
+                background-color:#efefef;
+                @include border-radius(px2rem(8))
+            }
+        }
+    }
+    .color{
+        li{
+            width:25%;
+        }
+    }
+    .size{
+        li{
+            width:20%;
+        }
+    }
+    .size h3:after{
+        display:inline-block;
+        content:'尺码助手';
+        font-size:px2rem(16);
+        padding:px2rem(6) px2rem(20);
+        color:#fff;
+        float:right;
+        background-color:#ee8416;
+        letter-spacing:2px;
+        @include border-radius(px2rem(6));
+    }
+    .buy{
+        display:-webkit-box;
+        display:-webkit-flex;
+        display:flex;
+        .item{
+            width:50%;
+        }
+        .item:last-child{
+            font-size:0;
+        }
+        .trade-btn{
+            display:inline-block;
+            padding:px2rem(6) px2rem(20);
+            width:px2rem(70);
+            border:1px solid #ccc;
+        }
+        .trade-btn:nth-child(1){
+            border-top-left-radius:px2rem(8);
+            border-bottom-left-radius:px2rem(8);
+        }
+        .trade-btn:nth-child(2){
+            border-left:none;
+            border-right:none;
+        }
+        .trade-btn:nth-child(3){
+            border-top-right-radius:px2rem(8);
+            border-bottom-right-radius:px2rem(8);
+        }
+    }
+    .close{
+        display:inline-block;
+        width:px2rem(30);
+        height:px2rem(30);
+        line-height:px2rem(30);
+        text-align:center;
+        font-size:px2rem(30);
+        float:right;
+        color:#ccc;
+        border:1px solid #ccc;
+        @include border-radius(px2rem(15));
+    }
+}
+.select-color{
+    color:#fff;
+    background-color:#ee8614 !important;
+}
