@@ -2,7 +2,7 @@
  * 底部样式
  */
 .m-bottom{
-    margin-bottom:px2rem(100);
+    margin-bottom:px2rem(180);
 }
 .footer{
     position:fixed;
@@ -11,11 +11,15 @@
     width:100%;
     background-color:rgb(221, 221, 221);
     ul{
-        font-size:0;
+        // font-size:0;
+        display:-webkit-box;
+        display:-webkit-flex;
+        display:flex;
     }
     li{
         box-sizing:-webkit-border-box;
-        display:inline-block;
+        // display:inline-block;
+        flex:1;
         width:20%;
         height:px2rem(90);
         text-align:center;
