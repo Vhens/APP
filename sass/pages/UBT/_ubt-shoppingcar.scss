@@ -1,0 +1,40 @@
+.shoppingcar{
+    ul{
+        li{
+            border-bottom:px2rem(10) solid #CACACA;
+            padding:px2rem(20) px2rem(20);
+            display:-webkit-box;
+            -webkit-box-align:center;
+            img{
+                width:px2rem(100);
+                height:px2rem(100);
+            }
+            .info{
+                margin-left:px2rem(20);
+                -webkit-box-flex:8;
+            }
+            .ahead{
+                -webkit-box-flex:2;
+            }
+        }
+        li:last-child{
+            background-color:#EDECEC;
+            border-bottom:0;
+        }
+    }
+    .account{
+        width:100%;
+        height:px2rem(400);
+        position:relative;
+    }
+    a{
+        position:absolute;
+        bottom:px2rem(20);
+        padding:px2rem(20) 0;
+        background-color:#EA5513;
+        color:white;
+        width:94%;
+        left:3%;
+        @include border-radius(5px);
+    }
+}

@@ -1,0 +1,40 @@
+.revisepwd{
+    padding:px2rem(25) 0;
+    .content{
+        margin:0 px2rem(25);
+        padding:px2rem(15) px2rem(15);
+        background-color:#EDECEC;
+        border:1px solid gray;
+        @include border-radius(5px);
+        .title{
+            color:white;
+            padding:px2rem(40) 0;
+            background-color:#EA5513;
+            @include border-radius(5px);
+        }
+        span{
+            color:red;
+        }
+        input{
+            width:100%;
+            height:px2rem(50);
+            background-color:#EDECEC;
+            border:1px solid gray;
+        }
+    }
+    .btn{
+        margin-top:px2rem(500);
+        width:100%;
+        position:relative;
+    }
+    a{
+        position:absolute;
+        bottom:px2rem(20);
+        padding:px2rem(20) 0;
+        background-color:#EA5513;
+        color:white;
+        width:94%;
+        left:3%;
+        @include border-radius(5px);
+    }
+}

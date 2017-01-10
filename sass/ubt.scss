@@ -1,3 +1,4 @@
+
 /**
  * 基础样式
  */
@@ -10,6 +11,19 @@
 @import 'base/base';
 @import 'components/btn';
 @import 'components/radio';
+@import 'components/checkbox';
+@import 'components/upload';
+@import 'pages/UBT/ubt-usercenter';
+// @import 'pages/UBT/ubt-order';
+@import 'pages/UBT/ubt-shoppingcar';
+@import 'pages/UBT/ubt-userinfo';
+@import 'pages/UBT/ubt-income';
+@import 'pages/UBT/ubt-revisepwd';
+@import 'pages/UBT/ubt-code';
+@import 'pages/UBT/ubt-draw';
+@import 'pages/UBT/ubt-address';
+@import 'pages/UBT/ubt-addAddress';
+@import 'pages/UBT/ubt-login';
 @import 'components/upload1';
 @import 'components/upload2';
 
