@@ -10,9 +10,15 @@ input[type='radio']+label{
     overflow:hidden;
     width:18px;
     height:18px;
+<<<<<<< HEAD
+
+    border:1px solid #ccc;
+    background-color:#CACACA;
+=======
     vertical-align:middle;
     border:1px solid #888;
     background-color:#fff;
+>>>>>>> refs/remotes/origin/master
     margin-right:10px;
     cursor:pointer;
     @include border-radius(50%)
@@ -26,18 +32,18 @@ input[type='radio']+label:after{
     width:12px;
     height:12px;
 
-    background-color:orange;
+    background-color:nth($color,3);
     @include border-radius(50%);
     @include transform(scale(0));
     @include transition(transform .2s ease-out)
 }
 
-input[type='radio']:checked+label{
+ input[type='radio']:checked+label{
     background-color:#fff;
     @include transition(background-color .2s ease-in)
 }
 input[type='radio']:checked+label:after{
-    background-color:orange;
+    background-color:nth($color,3);
     @include transform(scale(1));
-    @include transition(transform .2s ease-in)
+    @include transition(transform .2s ease-in);
 }

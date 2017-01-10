@@ -1,0 +1,80 @@
+.m-tab{
+    margin-top:px2rem(142);
+}
+    .tab{
+        position:fixed;
+        top:px2rem(72);
+        left:0;
+        width:100%;
+        background-color:#fff;
+        font-size:0;
+        z-index:30;
+        li{
+            display:inline-block;
+            width:25%;
+            height:px2rem(60);
+            line-height:px2rem(60);
+            text-align:center;
+            color:#666;
+        }
+        li:not(:last-child){
+            /* border-right:1px solid #ccc; */
+        }
+        .cur-tab{
+            display:inline-block;
+            widows: 55%;
+            border-bottom:1px solid nth($color,3);
+            color:nth($color,3);
+        }
+    }
+.order{
+    .page{
+        .content{
+            .detail:first-child{
+                margin-top:0;
+            }
+            .detail{
+                height:px2rem(220);
+                background-color:white;
+                padding:px2rem(10) px2rem(25);
+                position:relative;
+                margin-top:px2rem(10);
+                ul{
+                    height:px2rem(121);
+                    margin:px2rem(10) 0;
+                    border-top:1px solid black;
+                    border-bottom:1px solid black;
+                    padding:px2rem(10) 0;
+                    li{
+                        display:-webkit-box;
+                        img{
+                            width:px2rem(100);
+                            height:px2rem(100);
+                        }
+                    }
+                    li:last-child{
+                        position:relative;
+                        -webkit-box-orient:vertical;
+                        span{
+                            position:absolute;
+                            height:px2rem(100);
+                            padding:0 px2rem(25);
+                            line-height:px2rem(33);
+                        }
+                    }
+                }
+                .ope{
+                    height:px2rem(50);
+                    position:absolute;
+                    right:px2rem(40);
+                }
+                a{
+                    width:px2rem(100);
+                    padding:px2rem(5);
+                    border:1px solid black;
+                    @include border-radius(5px);
+                }
+            }
+        }
+    }
+}
