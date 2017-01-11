@@ -3,7 +3,7 @@ $(function(){
      var topSlider=new Swiper('.swiper-container1', {
             slidesPerView: 1,
             centeredSlides: true,
-            autoplay: 2000,
+            autoplay: 3000,
             loop: true,
             slidesPerView : 5,
             spaceBetween : 20,
@@ -72,7 +72,7 @@ function banner(className) {
             paginationHide :true,
             slidesPerView: 1,
             centeredSlides: true,
-            autoplay: 2000,
+            autoplay: 6000,
             loop: true,
             prevButton:'.swiper-button-prev',
             nextButton:'.swiper-button-next',
