@@ -2,11 +2,13 @@ $(function(){
     banner('.swiper-container');
      var topSlider=new Swiper('.swiper-container1', {
             slidesPerView: 1,
-            centeredSlides: true,
+            // centeredSlides: true,
             autoplay: 2000,
             loop: true,
             slidesPerView : 5,
             spaceBetween : 20,
+            paginationClickable :true,
+            paginationHide:false,
             prevButton:'.swiper-button-prev',
             nextButton:'.swiper-button-next',
             autoplayDisableOnInteraction: true

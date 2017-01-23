@@ -1,6 +1,9 @@
 /**
  * 控股首页
  */
+.main-hold{
+    min-width:1420px;
+}
  .sepia{
           -webkit-filter:sepia(.8);
           &:hover{
@@ -138,6 +141,7 @@
  * 公司简介
  */
     .more-img{
+        min-width:1000px;
         .img-item{
             &:hover{
                 color:red;

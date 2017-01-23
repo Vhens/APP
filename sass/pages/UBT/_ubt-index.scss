@@ -22,7 +22,9 @@
  * 主体内容
  */
 .main{
-    width:100%;
+   width:100%;
+   overflow-y: scroll;
+   -webkit-overflow-scrolling: touch;
 }
 /**
  * 优惠
@@ -36,6 +38,7 @@
     .item{
         display:inline-block;
         vertical-align:top;
+        padding:px2rem(20) 0;
         img{
             width:100%;
         }
@@ -68,6 +71,7 @@
 .selling{
     background-color:#fff;
     padding:px2rem(10) px2rem(20);
+    margin-top:px2rem(20);
     .yb-title{
         display:inline-block;
         padding: px2rem(20) 0;

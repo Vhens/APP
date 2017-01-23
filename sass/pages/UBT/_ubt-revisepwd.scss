@@ -4,7 +4,7 @@
         margin:0 px2rem(25);
         padding:px2rem(15) px2rem(15);
         background-color:#EDECEC;
-        border:1px solid gray;
+        border:1px solid #ccc;
         @include border-radius(5px);
         .title{
             color:white;
@@ -19,7 +19,7 @@
             width:100%;
             height:px2rem(50);
             background-color:#EDECEC;
-            border:1px solid gray;
+            border:1px solid #ccc;
         }
     }
     .btn{
